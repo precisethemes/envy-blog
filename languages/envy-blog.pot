@@ -1,0 +1,1574 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-12-06 08:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/"
+
+#: 404.php:49
+msgid "Most Used Categories"
+msgstr ""
+
+#: 404.php:69
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#: comments.php:29
+msgid "No Responses"
+msgstr ""
+
+#: comments.php:29
+msgid "One Response"
+msgstr ""
+
+#: comments.php:29
+msgid "% Responses"
+msgstr ""
+
+#: comments.php:34 comments.php:55
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:37 comments.php:58
+msgid "Older Comments"
+msgstr ""
+
+#: comments.php:38 comments.php:59
+msgid "Newer Comments"
+msgstr ""
+
+#: comments.php:72
+msgid "Comments are closed."
+msgstr ""
+
+#: functions.php:105
+msgid "Primary"
+msgstr ""
+
+#: functions.php:258
+msgid "Install Required Plugins"
+msgstr ""
+
+#: functions.php:259
+msgid "Install Plugins"
+msgstr ""
+
+#. %s: plugin name.
+#: functions.php:261
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#. %s: plugin name.
+#: functions.php:263
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: functions.php:264
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: functions.php:265
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:271
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:277
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:283
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:289
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:295
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:301
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:306
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:311
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:316
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: functions.php:317
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: functions.php:318
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#. 1: plugin name.
+#: functions.php:320
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#. 1: plugin name.
+#: functions.php:322
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#. 1: dashboard link.
+#: functions.php:324
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: functions.php:325
+msgid "Dismiss this notice"
+msgstr ""
+
+#: functions.php:326
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: functions.php:327
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: search.php:20
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: search.php:38 woocommerce/loop/pagination.php:40
+msgid "Prev"
+msgstr ""
+
+#: search.php:39 layouts/pagination/pagination.php:27
+#: woocommerce/loop/pagination.php:41
+msgid "Next"
+msgstr ""
+
+#: search.php:40 layouts/pagination/pagination.php:28
+#: woocommerce/loop/pagination.php:42
+msgid "Page"
+msgstr ""
+
+#: inc/functions.php:75
+#, php-format
+msgid "Copyright &copy; %1$s %3$s. %2$s."
+msgstr ""
+
+#: inc/functions.php:75
+msgid "All rights reserved"
+msgstr ""
+
+#: inc/functions.php:77
+#, php-format
+msgid "Designed by %2$s"
+msgstr ""
+
+#: inc/functions.php:77
+msgid "http://precisethemes.com/"
+msgstr ""
+
+#: inc/functions.php:90 inc/functions.php:96 inc/customizer/panel/hero.php:196
+msgid "Discover"
+msgstr ""
+
+#: inc/template-tags.php:15
+msgid "Published on: "
+msgstr ""
+
+#: inc/template-tags.php:45
+msgid "Author: "
+msgstr ""
+
+#: inc/template-tags.php:62
+msgid "Comment: "
+msgstr ""
+
+#: inc/template-tags.php:63
+msgid "Comments: "
+msgstr ""
+
+#: inc/template-tags.php:88
+msgid "Category: "
+msgstr ""
+
+#: inc/template-tags.php:89
+msgid "Categories: "
+msgstr ""
+
+#: inc/template-tags.php:119
+msgid " and tagged in: "
+msgstr ""
+
+#. %s: Name of current post
+#: inc/template-tags.php:153
+#, php-format
+msgid "Edit<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: inc/template-tags.php:208
+#, php-format
+msgid "<label><span>Category %s"
+msgstr ""
+
+#: inc/template-tags.php:210
+#, php-format
+msgid "<label><span>Tag %s"
+msgstr ""
+
+#: inc/template-tags.php:212
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: inc/template-tags.php:214
+#, php-format
+msgid "Year: %s"
+msgstr ""
+
+#: inc/template-tags.php:214 inc/compatibility/breadcrumbs/breadcrumbs.php:758
+#: inc/compatibility/breadcrumbs/breadcrumbs.php:787
+#: inc/compatibility/breadcrumbs/breadcrumbs.php:814
+#: inc/compatibility/breadcrumbs/breadcrumbs.php:841
+#: inc/compatibility/breadcrumbs/breadcrumbs.php:1180
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: inc/template-tags.php:216
+#, php-format
+msgid "Month: %s"
+msgstr ""
+
+#: inc/template-tags.php:216
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: inc/template-tags.php:218
+#, php-format
+msgid "Day: %s"
+msgstr ""
+
+#: inc/template-tags.php:218
+msgctxt "daily archives date format"
+msgid "F j, Y"
+msgstr ""
+
+#: inc/template-tags.php:221
+msgctxt "post format archive title"
+msgid "Asides"
+msgstr ""
+
+#: inc/template-tags.php:223
+msgctxt "post format archive title"
+msgid "Galleries"
+msgstr ""
+
+#: inc/template-tags.php:225
+msgctxt "post format archive title"
+msgid "Images"
+msgstr ""
+
+#: inc/template-tags.php:227
+msgctxt "post format archive title"
+msgid "Videos"
+msgstr ""
+
+#: inc/template-tags.php:229
+msgctxt "post format archive title"
+msgid "Quotes"
+msgstr ""
+
+#: inc/template-tags.php:231
+msgctxt "post format archive title"
+msgid "Links"
+msgstr ""
+
+#: inc/template-tags.php:233
+msgctxt "post format archive title"
+msgid "Statuses"
+msgstr ""
+
+#: inc/template-tags.php:235
+msgctxt "post format archive title"
+msgid "Audio"
+msgstr ""
+
+#: inc/template-tags.php:237
+msgctxt "post format archive title"
+msgid "Chats"
+msgstr ""
+
+#: inc/template-tags.php:240
+#, php-format
+msgid "Archives: %s"
+msgstr ""
+
+#. 1: Taxonomy singular name, 2: Current taxonomy term
+#: inc/template-tags.php:244
+#, php-format
+msgid "%1$s: %2$s"
+msgstr ""
+
+#: inc/template-tags.php:246 inc/compatibility/breadcrumbs/breadcrumbs.php:248
+#: inc/customizer/panel/404-error.php:96
+msgid "Archives"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-none.php:21
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:25
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:31
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: template-parts/content.php:47
+msgid "Pages:"
+msgstr ""
+
+#: woocommerce/archive-product.php:62
+msgid "CATEGORY"
+msgstr ""
+
+#: woocommerce/archive-product.php:65
+msgid "TAG"
+msgstr ""
+
+#: inc/customizer/customizer.php:28
+msgid "Widgets"
+msgstr ""
+
+#: inc/demo-importer/demo-importer.php:18
+msgid ""
+"After you import this demo, you will have to setup the slider separately."
+msgstr ""
+
+#: inc/meta-boxes/class-meta-box.php:41
+msgid "Select Layout"
+msgstr ""
+
+#: inc/meta-boxes/class-meta-box.php:65
+msgid "Default Sidebar"
+msgstr ""
+
+#: inc/meta-boxes/class-meta-box.php:68
+msgid "Left Sidebar"
+msgstr ""
+
+#: inc/meta-boxes/class-meta-box.php:71
+msgid "Full Width"
+msgstr ""
+
+#: inc/meta-boxes/class-meta-box.php:74
+msgid "Right Sidebar"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:35
+#: inc/welcome-screen/class-welcome-screen.php:36
+#: inc/welcome-screen/class-welcome-screen.php:93
+msgid "Getting Started"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:53
+#, php-format
+msgid "Welcome to %s"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:54
+#, php-format
+msgid ""
+"Welcome! Thank you for choosing %s ! To fully take advantage of the best our "
+"theme can offer please make sure you visit our %swelcome page%s."
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:57
+#, php-format
+msgid "Get started with %s"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:62
+msgid "Dismiss"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:81
+#, php-format
+msgid "Hello, %s,"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:82
+#, php-format
+msgid "Welcome to %s version %s"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:94
+#: inc/welcome-screen/class-welcome-screen.php:130
+#: inc/welcome-screen/class-welcome-screen.php:134
+#: inc/welcome-screen/class-welcome-screen.php:176
+msgid "Support Forum"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:95
+msgid "Free vs Pro"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:96
+msgid "Changelog"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:108
+#, php-format
+msgid ""
+"Have you ❤ using %s? Please rate ⭐⭐⭐⭐⭐ our theme %s on WordPress.org ☺ Thank "
+"you"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:122
+msgid "Documentation & Installation Guide"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:124
+msgid ""
+"Theme documentation page will guide you to install and configure theme quick "
+"and easy. We have included details, screenshots and stepwise description "
+"about theme installation guides and tutorials."
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:126
+msgid "View Documentation"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:132
+#: inc/welcome-screen/class-welcome-screen.php:178
+#, php-format
+msgid ""
+"Need help to setup your website with %s theme? Visit our support forum and "
+"browse support topics or create new, one of our support member will follow "
+"and help you to solver your issue."
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:138
+msgid "Demo content"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:140
+msgid "Install:  One Click Demo Import"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:141
+msgid ""
+"Install the following plugin and then come back here to access the importer. "
+"With it you can import all demo content and change your homepage and blog "
+"page to the ones from our demo site, automatically. It will also assign a "
+"menu."
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:146
+msgid "Install and Activate"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:147
+msgid "Go to the importer"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:150
+msgid "Plugin installed and active!"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:151
+msgid "Go to the automatic importer"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:158
+msgid "Theme Option & Customization"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:160
+msgid ""
+"Most of theme settings customization options are available through theme "
+"customizer. To setup and customise your website elements and sections."
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:162
+msgid "Go to Customizer"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:180
+msgid "Visit Support Forum"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:194
+msgid "Theme Features"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:195
+msgid "Free Version"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:196
+msgid "Pro Version"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:200
+msgid "Coming Soon Page"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:206
+msgid "Number of Header Layouts"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:207
+#: inc/welcome-screen/class-welcome-screen.php:231
+#: inc/welcome-screen/class-welcome-screen.php:285
+#: inc/welcome-screen/class-welcome-screen.php:310
+#: inc/welcome-screen/class-welcome-screen.php:357
+msgid "2"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:208
+msgid "6"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:212
+#: inc/customizer/panel/header.php:46
+msgid "Sticky Header"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:218
+msgid "Header Separator"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:224
+msgid "Smooth Page Scroll"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:230
+msgid "Hero Section Layout"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:232
+msgid "7"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:236
+msgid "Hero Section Video Support"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:242
+msgid "Built-in Custom Widgets"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:243
+#: inc/welcome-screen/class-welcome-screen.php:292
+#: inc/welcome-screen/class-welcome-screen.php:358
+msgid "3"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:244
+msgid "4"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:248
+msgid "Sticky Sidebar"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:254
+msgid "Unlimited Widget Area (Sidebar) Generator"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:260
+msgid "Unique Posts/Pages Sidebar"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:266
+msgid "Typography Option (850+ Google Fonts)"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:272
+msgid "Advanced Archive/Blog Settings"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:278
+msgid "Archive/Blog Header"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:284
+msgid "Number of Blog Layouts"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:286
+#: inc/welcome-screen/class-welcome-screen.php:352
+msgid "10"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:290
+msgid "Post Navigation Layout"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:291
+#: inc/welcome-screen/class-welcome-screen.php:309
+#: inc/welcome-screen/class-welcome-screen.php:351
+msgid "1"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:296
+msgid "Show Related Posts"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:302
+msgid "Advanced Post Settings"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:308
+msgid "Number of Post Layouts"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:314
+msgid "Sortable Post Elements"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:320
+msgid "Social Share Option"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:326
+msgid "Advanced Page Settings"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:332
+msgid "Sortable Page Elements"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:338
+msgid "Advanced 404 Error Page Editor"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:344
+msgid "Advanced WooCommerce Settings"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:350
+msgid "Number of Footer Widgets Position Layouts"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:356
+msgid "Number of Footer Bar Elements"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:362
+msgid "Sortable Footer Bar Elements"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:368
+msgid "Footer Copyright Editor"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:374
+msgid "Contact Form 7 Compatible"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:380
+msgid "WooCommerce Compatible"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:386
+msgid "Theme Support"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:387
+msgid "Quick Ticket Support"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:388
+msgid "Support via Forum"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:394
+#, php-format
+msgid ""
+"Need more features and customization option? Try Pro Version of %s theme."
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:395
+#, php-format
+msgid "<span>View %s Pro Details"
+msgstr ""
+
+#: inc/widgets/about-widget.php:17
+msgid "Display author details."
+msgstr ""
+
+#: inc/widgets/about-widget.php:19
+msgid "PT: About"
+msgstr ""
+
+#: inc/widgets/about-widget.php:37
+msgid ""
+"Tip: This widget is used to display user details. Go to Users-> All Users-> "
+"Edit and update options."
+msgstr ""
+
+#: inc/widgets/about-widget.php:44 inc/widgets/recent-posts-widget.php:41
+#: inc/widgets/social-profiles-widget.php:39
+#: inc/widgets/social-profiles-widget.php:46
+#: inc/customizer/panel/404-error.php:33 inc/customizer/panel/blog.php:90
+#: inc/customizer/panel/hero.php:90 inc/customizer/panel/page.php:67
+#: inc/customizer/panel/post.php:67
+msgid "Title"
+msgstr ""
+
+#: inc/widgets/about-widget.php:58
+msgid "Author"
+msgstr ""
+
+#: inc/widgets/about-widget.php:63
+msgid "Select an user"
+msgstr ""
+
+#: inc/widgets/about-widget.php:76
+msgid "Content Alignment"
+msgstr ""
+
+#: inc/widgets/about-widget.php:81 inc/customizer/panel/hero.php:160
+msgid "Left"
+msgstr ""
+
+#: inc/widgets/about-widget.php:82 inc/customizer/panel/hero.php:161
+msgid "Center"
+msgstr ""
+
+#: inc/widgets/about-widget.php:91
+msgid "Rounded Image"
+msgstr ""
+
+#: inc/widgets/recent-posts-widget.php:16
+msgid "Display latest posts or posts of specific category."
+msgstr ""
+
+#: inc/widgets/recent-posts-widget.php:18
+msgid "PT: Recent Posts"
+msgstr ""
+
+#: inc/widgets/recent-posts-widget.php:55
+msgid "Post Type"
+msgstr ""
+
+#: inc/widgets/recent-posts-widget.php:60
+msgid "Latest Posts"
+msgstr ""
+
+#: inc/widgets/recent-posts-widget.php:61
+msgid "Random Posts"
+msgstr ""
+
+#: inc/widgets/recent-posts-widget.php:62
+msgid "By Category"
+msgstr ""
+
+#: inc/widgets/recent-posts-widget.php:71
+msgid "Select Category"
+msgstr ""
+
+#: inc/widgets/recent-posts-widget.php:80
+msgid ""
+"Note:- List the posts by category please select post type as by category."
+msgstr ""
+
+#: inc/widgets/recent-posts-widget.php:88
+msgid "Number of Posts"
+msgstr ""
+
+#: inc/widgets/recent-posts-widget.php:95
+msgid "Note:- For layout 3 max post limit is 5."
+msgstr ""
+
+#: inc/widgets/recent-posts-widget.php:103
+msgid "Excerpt Limit"
+msgstr ""
+
+#: inc/widgets/recent-posts-widget.php:117
+msgid "Show Read More"
+msgstr ""
+
+#: inc/widgets/recent-posts-widget.php:132 inc/customizer/panel/blog.php:21
+#: inc/customizer/panel/blog.php:32 inc/customizer/panel/footer.php:83
+#: inc/customizer/panel/header.php:21 inc/customizer/panel/header.php:32
+#: inc/customizer/panel/hero.php:54 inc/customizer/panel/hero.php:65
+#: inc/customizer/panel/page.php:21 inc/customizer/panel/page.php:32
+#: inc/customizer/panel/post.php:21 inc/customizer/panel/post.php:32
+msgid "Layout"
+msgstr ""
+
+#: inc/widgets/recent-posts-widget.php:137
+msgid "Layout 1"
+msgstr ""
+
+#: inc/widgets/recent-posts-widget.php:138
+msgid "Layout 2"
+msgstr ""
+
+#: inc/widgets/recent-posts-widget.php:252
+#, php-format
+msgctxt "%s = human-readable time difference"
+msgid "%s ago"
+msgstr ""
+
+#: inc/widgets/social-profiles-widget.php:17
+msgid "Display social profiles."
+msgstr ""
+
+#: inc/widgets/social-profiles-widget.php:19
+msgid "PT: Social Profiles"
+msgstr ""
+
+#: inc/widgets/social-profiles-widget.php:33
+msgid ""
+"Tip: This widget is used to display social profiles for that you have to set "
+"profile links through Appearance-> Customize-> Social-> Social Profiles."
+msgstr ""
+
+#: inc/widgets/social-profiles-widget.php:70 inc/customizer/panel/social.php:44
+#: inc/customizer/panel/social.php:71
+msgid "Facebook"
+msgstr ""
+
+#: inc/widgets/widgets.php:21 inc/customizer/panel/blog.php:106
+#: inc/customizer/panel/page.php:77 inc/customizer/panel/post.php:78
+msgid "Sidebar"
+msgstr ""
+
+#: inc/widgets/widgets.php:23
+msgid "Add widgets in your sidebar of theme."
+msgstr ""
+
+#. %d: widget number
+#: inc/widgets/widgets.php:44
+#, php-format
+msgid "Footer %d"
+msgstr ""
+
+#. %d: widget number
+#: inc/widgets/widgets.php:47
+#, php-format
+msgid "Add widgets in your footer widget area %d."
+msgstr ""
+
+#: layouts/header/header-layout-1.php:77 layouts/header/header-layout-6.php:76
+msgctxt "placeholder"
+msgid "Start Typing Here&hellip;"
+msgstr ""
+
+#: layouts/header/header-layout-1.php:77 layouts/header/header-layout-6.php:76
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: layouts/header/header-layout-1.php:78 layouts/header/header-layout-6.php:77
+msgid "Press Enter/Return to start Search"
+msgstr ""
+
+#: layouts/navigation/post-navigation.php:16
+msgid "Next Post"
+msgstr ""
+
+#: layouts/navigation/post-navigation.php:17
+msgid "Next post:"
+msgstr ""
+
+#: layouts/navigation/post-navigation.php:19
+msgid "Previous Post"
+msgstr ""
+
+#: layouts/navigation/post-navigation.php:20
+msgid "Previous post:"
+msgstr ""
+
+#: layouts/pagination/pagination.php:15 woocommerce/loop/pagination.php:29
+msgid "Posts navigation"
+msgstr ""
+
+#: layouts/pagination/pagination.php:26
+msgid "Previous"
+msgstr ""
+
+#: woocommerce/cart/cross-sells.php:27
+msgid "You may be interested in&hellip;"
+msgstr ""
+
+#: woocommerce/single-product/related.php:27
+msgid "Related products"
+msgstr ""
+
+#: woocommerce/single-product/up-sells.php:27
+msgid "You may also like&hellip;"
+msgstr ""
+
+#: inc/compatibility/breadcrumbs/breadcrumbs.php:244
+msgid "Browse:"
+msgstr ""
+
+#: inc/compatibility/breadcrumbs/breadcrumbs.php:245
+msgctxt "breadcrumbs aria label"
+msgid "Breadcrumbs"
+msgstr ""
+
+#: inc/compatibility/breadcrumbs/breadcrumbs.php:246
+msgid "Home"
+msgstr ""
+
+#: inc/compatibility/breadcrumbs/breadcrumbs.php:247
+msgid "404 Not Found"
+msgstr ""
+
+#. %s is the search query. The HTML entities are opening and closing curly quotes.
+#: inc/compatibility/breadcrumbs/breadcrumbs.php:250
+#, php-format
+msgid "Search results for &#8220;%s&#8221;"
+msgstr ""
+
+#. %s is the page number.
+#: inc/compatibility/breadcrumbs/breadcrumbs.php:252
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#. Minute archive title. %s is the minute time format.
+#: inc/compatibility/breadcrumbs/breadcrumbs.php:254
+#, php-format
+msgid "Minute %s"
+msgstr ""
+
+#. Weekly archive title. %s is the week date format.
+#: inc/compatibility/breadcrumbs/breadcrumbs.php:256
+#, php-format
+msgid "Week %s"
+msgstr ""
+
+#: inc/compatibility/breadcrumbs/breadcrumbs.php:708
+msgctxt "minute and hour archives time format"
+msgid "g:i a"
+msgstr ""
+
+#: inc/compatibility/breadcrumbs/breadcrumbs.php:725
+msgctxt "minute archives time format"
+msgid "i"
+msgstr ""
+
+#: inc/compatibility/breadcrumbs/breadcrumbs.php:742
+msgctxt "hour archives time format"
+msgid "g a"
+msgstr ""
+
+#: inc/compatibility/breadcrumbs/breadcrumbs.php:759
+#: inc/compatibility/breadcrumbs/breadcrumbs.php:815
+#: inc/compatibility/breadcrumbs/breadcrumbs.php:1184
+msgctxt "monthly archives date format"
+msgid "F"
+msgstr ""
+
+#: inc/compatibility/breadcrumbs/breadcrumbs.php:760
+#: inc/compatibility/breadcrumbs/breadcrumbs.php:1188
+msgctxt "daily archives date format"
+msgid "j"
+msgstr ""
+
+#: inc/compatibility/breadcrumbs/breadcrumbs.php:788
+msgctxt "weekly archives date format"
+msgid "W"
+msgstr ""
+
+#: inc/customizer/panel/404-error.php:13
+msgid "404 Error Page"
+msgstr ""
+
+#: inc/customizer/panel/404-error.php:21 inc/customizer/panel/page.php:13
+msgid "Page Settings"
+msgstr ""
+
+#: inc/customizer/panel/404-error.php:35
+msgid "Oops! That page can't be found."
+msgstr ""
+
+#: inc/customizer/panel/404-error.php:44
+msgid "Short Description"
+msgstr ""
+
+#: inc/customizer/panel/404-error.php:46
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: inc/customizer/panel/404-error.php:55
+msgid "Search Bar"
+msgstr ""
+
+#: inc/customizer/panel/404-error.php:66
+msgid "Recent Post"
+msgstr ""
+
+#: inc/customizer/panel/404-error.php:76
+msgid "Tag"
+msgstr ""
+
+#: inc/customizer/panel/404-error.php:86
+msgid "Categories"
+msgstr ""
+
+#: inc/customizer/panel/blog.php:13
+msgid "Archive/Blog"
+msgstr ""
+
+#: inc/customizer/panel/blog.php:33
+msgid "Select the layout for the blog."
+msgstr ""
+
+#: inc/customizer/panel/blog.php:47 inc/customizer/panel/page.php:46
+#: inc/customizer/panel/post.php:45
+msgid "Settings"
+msgstr ""
+
+#: inc/customizer/panel/blog.php:58
+msgid "Columns Per Row"
+msgstr ""
+
+#: inc/customizer/panel/blog.php:81 inc/customizer/panel/footer.php:108
+#: inc/customizer/panel/page.php:57 inc/customizer/panel/post.php:56
+msgid "Content Order"
+msgstr ""
+
+#: inc/customizer/panel/blog.php:82 inc/customizer/panel/footer.php:109
+#: inc/customizer/panel/page.php:58 inc/customizer/panel/post.php:57
+#: inc/customizer/panel/social.php:31
+msgid "Drag & Drop items to re-arrange order of appearance."
+msgstr ""
+
+#: inc/customizer/panel/blog.php:89 inc/customizer/panel/post.php:68
+msgid "Meta"
+msgstr ""
+
+#: inc/customizer/panel/blog.php:117
+msgid "Archive/Blog Sidebar"
+msgstr ""
+
+#: inc/customizer/panel/blog.php:118
+msgid ""
+"Select default sidebar. This sidebar will be reflected in whole site "
+"archives, categories, search page etc. Info:- there is no any sidebar layout "
+"for the blog layout 1 and 2."
+msgstr ""
+
+#: inc/customizer/panel/footer.php:12
+msgid "Footer"
+msgstr ""
+
+#: inc/customizer/panel/footer.php:20 inc/customizer/panel/footer.php:45
+msgid "Back to Top"
+msgstr ""
+
+#: inc/customizer/panel/footer.php:31
+msgid "Activate Button"
+msgstr ""
+
+#: inc/customizer/panel/footer.php:32
+msgid "Enable it to display back to top button."
+msgstr ""
+
+#: inc/customizer/panel/footer.php:43
+msgid "Button Text"
+msgstr ""
+
+#: inc/customizer/panel/footer.php:60
+msgid "Footer Widgets"
+msgstr ""
+
+#: inc/customizer/panel/footer.php:71 inc/customizer/panel/general.php:43
+#: inc/customizer/panel/header.php:58 inc/customizer/panel/header.php:197
+#: inc/customizer/panel/header.php:220 inc/customizer/panel/hero.php:21
+#: inc/customizer/panel/hero.php:182 inc/customizer/panel/post.php:116
+#: inc/customizer/panel/post.php:152
+msgid "Activate"
+msgstr ""
+
+#: inc/customizer/panel/footer.php:72
+msgid "Enable it to display Footer Widget Area on all Pages."
+msgstr ""
+
+#: inc/customizer/panel/footer.php:84
+msgid ""
+"Select layout for footer widget columns. It generates some widget areas for "
+"Footer based on the layout."
+msgstr ""
+
+#: inc/customizer/panel/footer.php:97
+msgid "Footer Bar"
+msgstr ""
+
+#: inc/customizer/panel/footer.php:115
+msgid "Copyright Text"
+msgstr ""
+
+#: inc/customizer/panel/footer.php:116
+msgid "Social Icons"
+msgstr ""
+
+#: inc/customizer/panel/general.php:13
+msgid "General"
+msgstr ""
+
+#: inc/customizer/panel/general.php:21
+msgid "Background Color"
+msgstr ""
+
+#: inc/customizer/panel/general.php:31
+msgid "Breadcrumbs"
+msgstr ""
+
+#: inc/customizer/panel/general.php:44
+msgid "Enable it to display breadcrumbs in site."
+msgstr ""
+
+#: inc/customizer/panel/header.php:13
+msgid "Header"
+msgstr ""
+
+#: inc/customizer/panel/header.php:59
+msgid "Enable it to set Header Sticky"
+msgstr ""
+
+#: inc/customizer/panel/header.php:67
+msgid "Site Title & Tagline"
+msgstr ""
+
+#: inc/customizer/panel/header.php:79
+msgid "Display Site Title"
+msgstr ""
+
+#: inc/customizer/panel/header.php:89
+msgid "Logo Color"
+msgstr ""
+
+#: inc/customizer/panel/header.php:118
+msgid "Logo Hover Color"
+msgstr ""
+
+#: inc/customizer/panel/header.php:147
+msgid "Display Tagline"
+msgstr ""
+
+#: inc/customizer/panel/header.php:158
+msgid "Tagline Color"
+msgstr ""
+
+#: inc/customizer/panel/header.php:185
+msgid "Search Icon"
+msgstr ""
+
+#: inc/customizer/panel/header.php:198
+msgid "Enable it to display search icon in header section."
+msgstr ""
+
+#: inc/customizer/panel/header.php:208
+msgid "Shopping Cart Icon"
+msgstr ""
+
+#: inc/customizer/panel/header.php:221
+msgid "Enable it to display WooCommerce shopping cart icon in header section."
+msgstr ""
+
+#: inc/customizer/panel/hero.php:13
+msgid "Hero Section"
+msgstr ""
+
+#: inc/customizer/panel/hero.php:32
+msgid "Homepage"
+msgstr ""
+
+#: inc/customizer/panel/hero.php:33
+msgid "Enable it to display hero section on Homepage of the site."
+msgstr ""
+
+#: inc/customizer/panel/hero.php:44
+msgid "Static Homepage"
+msgstr ""
+
+#: inc/customizer/panel/hero.php:45
+msgid "Enable it to display hero section on static Homepage of the site."
+msgstr ""
+
+#: inc/customizer/panel/hero.php:79 inc/customizer/panel/page.php:68
+#: inc/customizer/panel/post.php:69
+msgid "Content"
+msgstr ""
+
+#: inc/customizer/panel/hero.php:92
+msgid "Hero Header Title"
+msgstr ""
+
+#: inc/customizer/panel/hero.php:108
+msgid "Subtitle"
+msgstr ""
+
+#: inc/customizer/panel/hero.php:110
+msgid "Hero Header Subtitle"
+msgstr ""
+
+#: inc/customizer/panel/hero.php:126
+msgid "Description"
+msgstr ""
+
+#: inc/customizer/panel/hero.php:128
+msgid ""
+"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy "
+"nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat"
+msgstr ""
+
+#: inc/customizer/panel/hero.php:144
+msgid "Background Image"
+msgstr ""
+
+#: inc/customizer/panel/hero.php:145
+msgid "The recommended size for the hero content image is 1200x675 pixels."
+msgstr ""
+
+#: inc/customizer/panel/hero.php:156
+msgid "Text Alignment"
+msgstr ""
+
+#: inc/customizer/panel/hero.php:162
+msgid "Right"
+msgstr ""
+
+#: inc/customizer/panel/hero.php:171
+msgid "Button"
+msgstr ""
+
+#: inc/customizer/panel/hero.php:183
+msgid "Enable it to display button in hero slide."
+msgstr ""
+
+#: inc/customizer/panel/hero.php:194
+msgid "Text"
+msgstr ""
+
+#: inc/customizer/panel/hero.php:213 inc/customizer/panel/social.php:59
+msgid "URL"
+msgstr ""
+
+#: inc/customizer/panel/hero.php:225
+msgid "Type"
+msgstr ""
+
+#: inc/customizer/panel/hero.php:229
+msgid "Rounded"
+msgstr ""
+
+#: inc/customizer/panel/hero.php:230
+msgid "Arrow"
+msgstr ""
+
+#: inc/customizer/panel/hero.php:231
+msgid "Underline"
+msgstr ""
+
+#: inc/customizer/panel/hero.php:241
+msgid "Border Radius"
+msgstr ""
+
+#: inc/customizer/panel/hero.php:279
+msgid "Background Transparent"
+msgstr ""
+
+#: inc/customizer/panel/page.php:33
+msgid "Choose your single page layout."
+msgstr ""
+
+#: inc/customizer/panel/page.php:66 inc/customizer/panel/post.php:66
+msgid "Featured Image"
+msgstr ""
+
+#: inc/customizer/panel/page.php:88
+msgid "Page Sidebar"
+msgstr ""
+
+#: inc/customizer/panel/page.php:89
+msgid ""
+"Select default layout for single page. This layout will be reflected in all "
+"single page unless unique layout is set for specific page."
+msgstr ""
+
+#: inc/customizer/panel/post.php:13
+msgid "Post Settings"
+msgstr ""
+
+#: inc/customizer/panel/post.php:89
+msgid "Post Sidebar"
+msgstr ""
+
+#: inc/customizer/panel/post.php:90
+msgid ""
+"Select default layout for single posts. This layout will be reflected in all "
+"single posts unless unique layout is set for specific post."
+msgstr ""
+
+#: inc/customizer/panel/post.php:105
+msgid "Navigation"
+msgstr ""
+
+#: inc/customizer/panel/post.php:117
+msgid "Enable it to display post navigation in the post page."
+msgstr ""
+
+#: inc/customizer/panel/post.php:128
+msgid "Navigation Layout"
+msgstr ""
+
+#: inc/customizer/panel/post.php:141
+msgid "Author Info Box"
+msgstr ""
+
+#: inc/customizer/panel/post.php:153
+msgid "Enable it to display Author Bio Section after post content."
+msgstr ""
+
+#: inc/customizer/panel/social.php:12 inc/customizer/panel/social.php:38
+msgid "Social"
+msgstr ""
+
+#: inc/customizer/panel/social.php:20
+msgid "Social Profiles"
+msgstr ""
+
+#: inc/customizer/panel/social.php:30
+msgid "Add Social Profile"
+msgstr ""
+
+#: inc/customizer/panel/social.php:54
+msgid "Profile Name"
+msgstr ""
+
+#: inc/customizer/panel/social.php:63
+msgid "Icon"
+msgstr ""
+
+#: inc/customizer/panel/social.php:67
+msgid "Behance"
+msgstr ""
+
+#: inc/customizer/panel/social.php:68
+msgid "Delicious"
+msgstr ""
+
+#: inc/customizer/panel/social.php:69
+msgid "Digg"
+msgstr ""
+
+#: inc/customizer/panel/social.php:70
+msgid "Dribbble"
+msgstr ""
+
+#: inc/customizer/panel/social.php:72
+msgid "Flickr"
+msgstr ""
+
+#: inc/customizer/panel/social.php:73
+msgid "Foursquare"
+msgstr ""
+
+#: inc/customizer/panel/social.php:74
+msgid "Github"
+msgstr ""
+
+#: inc/customizer/panel/social.php:75
+msgid "Google Plus"
+msgstr ""
+
+#: inc/customizer/panel/social.php:76
+msgid "Instagram"
+msgstr ""
+
+#: inc/customizer/panel/social.php:77
+msgid "LinkedIn"
+msgstr ""
+
+#: inc/customizer/panel/social.php:78
+msgid "Mail"
+msgstr ""
+
+#: inc/customizer/panel/social.php:79
+msgid "Medium"
+msgstr ""
+
+#: inc/customizer/panel/social.php:80
+msgid "Pinterest"
+msgstr ""
+
+#: inc/customizer/panel/social.php:81
+msgid "Reddit"
+msgstr ""
+
+#: inc/customizer/panel/social.php:82
+msgid "Skype"
+msgstr ""
+
+#: inc/customizer/panel/social.php:83
+msgid "Slack"
+msgstr ""
+
+#: inc/customizer/panel/social.php:84
+msgid "Stackoverflow"
+msgstr ""
+
+#: inc/customizer/panel/social.php:85
+msgid "Twitter"
+msgstr ""
+
+#: inc/customizer/panel/social.php:86
+msgid "Tumblr"
+msgstr ""
+
+#: inc/customizer/panel/social.php:87
+msgid "Vimeo"
+msgstr ""
+
+#: inc/customizer/panel/social.php:88
+msgid "Youtube"
+msgstr ""
+
+#: inc/customizer/panel/social.php:93
+msgid "Custom Icon"
+msgstr ""
+
+#: inc/customizer/panel/woocommerce.php:16
+msgid "WooCommerce"
+msgstr ""
+
+#: inc/customizer/panel/woocommerce.php:24
+msgid "Product Sidebar"
+msgstr ""
+
+#: inc/customizer/panel/woocommerce.php:35
+msgid "Sidebar Layout"
+msgstr ""
+
+#: inc/customizer/panel/woocommerce.php:36
+msgid ""
+"Select default sidebar layout. This layout will be reflected on product page "
+"of WooCommerce."
+msgstr ""
+
+#. Name of the theme
+msgid "Envy Blog"
+msgstr ""
+
+#. Description of the theme
+msgid ""
+"Envy Blog is clean, modern &amp; minimal WordPress theme with responsive "
+"design and beautifully designed theme perfectly for bloggers. Suitable for "
+"Personal Blog, Travel Blog, Niche Blog, Corporate Blog, Marketing Blog, "
+"Fashion Blog, Organic &amp; Natural Research Blog, Foods Blog, Magazine "
+"and/or any kind of Bog website. THEME FEATURES: Multiple Header Layout, "
+"Sticky Header, Search option with full screen search bar, Built-in "
+"Breadcrumbs, Social Profile Links, Built-in Hero Image Section (with title, "
+"sub-title, content, image &amp; button and with multiple layout), Page (with "
+"re-order content appearance, 3 different sidebar layout option), Post "
+"Settings (with re-order content appearance, 3 different sidebar layout "
+"option, post navigation &amp; author info box), Built-in 404 Error page with "
+"customization option, Blog/Archive Page settings (with multiple layout, "
+"column selector &amp; 3 different sidebar layout option), Footer (Back to "
+"top button,  4 Footer widgets positions and Footer Bar with sortable content)"
+". STANDARD FEATURES: Fully Responsive and Mobile Friendly, Translation Ready,"
+" SEO Optimized Codes, Theme Customizer &amp; Advanced Theme Options, Fast, "
+"Modern Design, Widgets Ready, One-Click Demo Import, WordPress Coding "
+"Standard, Left &amp; Right Sidebar, 404 Error Page, Contact Form 7 "
+"Compatible, Well Documented, Grid &amp; List blog/archive layout and more. "
+"BUILD-IN WIDGETS: About widget (Show author/user details), Recent Posts "
+"Widget (Custom recent posts with multiple layout and options) and Social "
+"Profile Widgets (for Social Profile links). DEMO: http://demo.precisethemes."
+"com/envy-blog/ MORE DETAILS: https://precisethemes.com/envy-blog/"
+msgstr ""
+
+#. URI of the theme
+msgid "http://precisethemes.com/envy-blog/"
+msgstr ""
+
+#. Author of the theme
+msgid "Precise Themes"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://precisethemes.com/"
+msgstr ""

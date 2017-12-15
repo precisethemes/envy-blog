@@ -1,0 +1,343 @@
+/*--------------------------------------------------------------
+# Layout Selector
+--------------------------------------------------------------*/
+/*
+# Reset WP Style
+----------------------------------*/
+.customize-control-checkbox label,
+.customize-control-nav_menu_auto_add label,
+.customize-control-radio label {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+# Customizer
+----------------------------------*/
+.wp-full-overlay-sidebar:after {
+    background: #dcdfe3;
+    width: 1px;
+}
+
+.wp-full-overlay-sidebar {
+    background: #eef0f2;
+    border-right: 0;
+    max-width: 300px;
+}
+
+.wp-full-overlay.expanded {
+    margin-left: 300px;
+}
+
+#customize-theme-controls .accordion-section-title {
+    background: #eef0f2;
+    border-bottom: 0;
+    padding: 10px 0 10px 20px;
+    transition: all .25s ease;
+}
+
+#customize-theme-controls .accordion-section-title:hover,
+#customize-theme-controls .accordion-section-title:focus {
+    background: #fdfdfe !important;
+}
+
+#customize-controls .customize-info .panel-title,
+#customize-controls .customize-pane-child .customize-section-title h3,
+#customize-controls .customize-pane-child h3.customize-section-title {
+    font-weight: 500;
+}
+
+#customize-theme-controls .accordion-section-title:after {
+    color: rgba(39,48,57,.4);
+    font-size: 16px;
+    top: 12px;
+}
+
+.expanded .wp-full-overlay-footer,
+#customize-header-actions,
+.customize-controls-close {
+    border-color: #dcdfe3;
+}
+
+.customize-panel-back {
+    height: 71px;
+    border-right: 1px solid #eef0f2;
+    border-bottom: 1px solid #eef0f2;
+    background: #fff !important;
+}
+
+#customize-controls .customize-info {
+    margin-bottom: 0;
+    border: 0;
+}
+
+#customize-controls #customize-info .accordion-section-title {
+    border-bottom: 0 !important;
+}
+
+#accordion-section-themes {
+    display: none !important;
+}
+
+#customize-controls #customize-theme-controls .accordion-section > .accordion-section-title {
+    border: 0 !important;
+}
+
+#customize-theme-controls .accordion-section-title {
+    background-color: transparent;
+}
+
+#customize-controls .control-section .accordion-section-title:focus,
+#customize-controls .control-section .accordion-section-title:hover,
+#customize-controls .control-section.open .accordion-section-title,
+#customize-controls .control-section:hover>.accordion-section-title {
+    background: #fff;
+}
+
+.customize-control-title, #customize-theme-controls .accordion-section-title {
+    font-size: 13px;
+}
+
+.customize-control-checkbox input,
+.customize-control-radio input {
+    margin-left: 0 !important;
+}
+
+/*
+# Layout SelectorImage
+----------------------------------*/
+#customize-controls img {
+    cursor: pointer;
+    margin-top: 15px;
+    text-align: center;
+    border: 1px solid #e2e2e4;
+    transition: .35s;
+}
+
+#customize-control-envy-blog_hero_background_image .thumbnail-image img {
+    width: calc(100% - 14px);
+}
+
+#customize-controls .radio-img:hover,
+#customize-controls .radio-img-selected {
+    opacity: 1;
+    border-color: #8c7fbe;
+}
+
+/* Form Elements
+----------------------------------*/
+.customize-control select,
+.customize-control input[type="text"],
+.customize-control input[type="email"],
+.customize-control input[type="number"],
+.customize-control input[type="url"],
+.customize-control input[type="search"],
+.customize-control input[type="tel"],
+.customize-control input[type="password"],
+.customize-control input[type="date"],
+.customize-control textarea,
+.customize-description {
+    display: block;
+    box-shadow: none;
+    border: 1px solid #dcdfe3;
+    width: 98%;
+    padding: 6px 8px;
+    height: auto;
+}
+
+.customize-description {
+    background: #fff;
+    width: 92%;
+}
+
+/* Kirk Customization
+----------------------------------*/
+.customize-control-kirki-radio-image label {
+    width: 100%;
+}
+
+.customize-control-kirki-toggle .switch {
+    width: 32px !important;
+    height: 8px !important;
+    top: 9px !important;
+}
+
+.customize-control-kirki-toggle .switch:after,
+.customize-control-kirki-toggle .switch:before {
+    width: 16px !important;
+    height: 16px !important;
+}
+
+.customize-control-kirki-radio-image img {
+    width: 255px !important;
+    border: 2px solid transparent !important;
+}
+
+.customize-control-kirki-radio-image input:checked + label img {
+    position: relative;
+    box-shadow: none !important;
+    border: 2px solid #3498DB !important;
+}
+
+/*--------------------------------------------------------------
+# Admin widgets input
+--------------------------------------------------------------*/
+.clear {
+    clear: both;
+}
+.admin-input-wrap {
+    margin-top: 15px;
+}
+
+.admin-input-wrap:last-child {
+    margin-bottom: 15px;
+}
+
+.admin-input-wrap a {
+    text-decoration: none;
+}
+
+.admin-input-label {
+    font-weight: 700;
+}
+
+.admin-input-holder {
+    position: relative;
+    width: 100%;
+    margin: 10px 0 20px;
+}
+
+.admin-input-holder p {
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 6px;
+    color: #7b8690;
+}
+
+.admin-input-wrap input[type='text'],
+.admin-input-wrap input[type='email'],
+.admin-input-wrap input[type='number'],
+.admin-input-wrap input[type='phone'],
+.admin-input-wrap input[type='password'],
+.admin-input-wrap input[type='url'],
+.admin-input-wrap input[type='number'],
+.admin-input-wrap select,
+.admin-input-wrap textarea {
+    width: 100%;
+    padding: 6px 8px;
+    box-shadow: none;
+}
+
+.admin-input-wrap select {
+    height: auto;
+    padding: 3px 6px 6px;
+}
+
+.admin-input-wrap img {
+    max-width: calc( 100% - 115px );
+    height: auto;
+    margin-bottom: 15px;
+
+    border: 6px solid #fff;
+    box-shadow: 0 0 1px #ccc;
+}
+
+.pt-custom-media-button {
+    margin: 0 96px;
+    padding: 8px 20px;
+
+    cursor: pointer;
+    -webkit-transition: all .35s ease;
+    -moz-transition: all .35s ease;
+    -o-transition: all .35s ease;
+    transition: all .35s ease;
+
+
+    border: 2px dashed #ddd;
+    border-radius: 3px;
+    outline: none !important;
+    background: #fdfdfd;
+    font-weight: bold;
+    font-size: 13px;
+    text-transform: capitalize;
+    color: #888;
+}
+
+.pt-custom-media-button:hover {
+    border-color: #888;
+    color: #555;
+}
+
+.admin-radio-wrap {
+    margin-top: -30px;
+    padding-left: 102px;
+}
+
+.admin-slider-wrap,
+.admin-logos-wrap {
+    border: 1px solid #e5e5e5;
+    padding: 10px;
+    margin-top: 15px;
+    background: #fdfdfd;
+}
+
+.admin-slider-wrap:last-child,
+.admin-logos-wrap:last-child {
+    margin-bottom: 15px;
+}
+
+.admin-testimonials {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.admin-testimonials textarea {
+    min-height: 100px;
+}
+
+/*--------------------------------------------------------------
+# Admin Widgets Dynamic Sidebar
+--------------------------------------------------------------*/
+.envy-blog-add-sidebar {
+    padding: 10px;
+    max-width: 900px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+}
+
+.envy-blog-add-sidebar input[type=text] {
+    max-width: 25em;
+    margin: 0 0 15px;
+    padding: 5px 10px;
+    line-height: 19px;
+    vertical-align: top
+}
+
+.envy-blog-delete-sidebar {
+    color: #aaa;
+    z-index: 100;
+    position: absolute;
+    top: 12px;
+    right: 45px
+}
+
+.envy-blog-delete-sidebar::before {
+    font-family: Dashicons;
+    speak: none;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    content: "";
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 0
+}
+
+.envy-blog-delete-sidebar:hover {
+    color: #d54e21;
+    cursor: pointer
+}

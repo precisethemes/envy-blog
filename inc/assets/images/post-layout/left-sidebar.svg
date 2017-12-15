@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="676 417 180 158">
+    <defs>
+        <style>.a{fill:#fff;}.b{fill:#3a3b3c;font-size:13px;font-family:SegoeUI-Semibold, Segoe
+            UI;font-weight:600;letter-spacing:0.03em;}.c{fill:none;}.d{fill:#e3e3e4;}.e{fill:#b8b9ba;}.f{fill:#c7c7c8;}.g{fill:#95989a;}
+        </style>
+    </defs>
+    <rect class="a" width="180" height="158" transform="translate(676 417)"/>
+    <text class="b" transform="translate(685.612 437.082)">
+        <tspan x="0" y="0">Left Sidebar</tspan>
+    </text>
+    <rect class="c" width="96.759" height="29.388" transform="translate(748.673 529.408)"/>
+    <rect class="c" width="96.759" height="27.918" transform="translate(748.673 529.408)"/>
+    <rect class="d" width="96" height="54" transform="translate(750 447)"/>
+    <path class="d" d="M0,0H22V16H0Z" transform="translate(686 447)"/>
+    <g transform="translate(6)">
+        <rect class="e" width="18" height="2" rx="1" transform="translate(704 449)"/>
+        <rect class="f" width="24" height="1" rx="0.5" transform="translate(704 454)"/>
+        <rect class="f" width="24" height="1" rx="0.5" transform="translate(704 456)"/>
+        <rect class="f" width="24" height="1" rx="0.5" transform="translate(704 458)"/>
+        <rect class="f" width="15" height="1" rx="0.5" transform="translate(704 460)"/>
+    </g>
+    <path class="d" d="M0,0H22V16H0Z" transform="translate(686 468)"/>
+    <g transform="translate(6 21)">
+        <rect class="e" width="18" height="2" rx="1" transform="translate(704 449)"/>
+        <rect class="f" width="24" height="1" rx="0.5" transform="translate(704 454)"/>
+        <rect class="f" width="24" height="1" rx="0.5" transform="translate(704 456)"/>
+        <rect class="f" width="24" height="1" rx="0.5" transform="translate(704 458)"/>
+        <rect class="f" width="15" height="1" rx="0.5" transform="translate(704 460)"/>
+    </g>
+    <path class="d" d="M0,0H22V16H0Z" transform="translate(686 489)"/>
+    <g transform="translate(6 42)">
+        <rect class="e" width="18" height="2" rx="1" transform="translate(704 449)"/>
+        <rect class="f" width="24" height="1" rx="0.5" transform="translate(704 454)"/>
+        <rect class="f" width="24" height="1" rx="0.5" transform="translate(704 456)"/>
+        <rect class="f" width="24" height="1" rx="0.5" transform="translate(704 458)"/>
+        <rect class="f" width="15" height="1" rx="0.5" transform="translate(704 460)"/>
+    </g>
+    <rect class="e" width="93" height="3" rx="1.5" transform="translate(750 509)"/>
+    <rect class="e" width="58" height="3" rx="1.5" transform="translate(750 516)"/>
+    <rect class="e" width="36" height="3" rx="1.5" transform="translate(686 520)"/>
+    <rect class="f" width="44" height="2" rx="1" transform="translate(692 528)"/>
+    <rect class="f" width="21" height="2" rx="1" transform="translate(692 532)"/>
+    <circle class="g" cx="1" cy="1" r="1" transform="translate(686 528)"/>
+    <rect class="f" width="44" height="2" rx="1" transform="translate(692 540)"/>
+    <rect class="f" width="21" height="2" rx="1" transform="translate(692 544)"/>
+    <circle class="g" cx="1" cy="1" r="1" transform="translate(686 540)"/>
+    <rect class="f" width="44" height="2" rx="1" transform="translate(692 552)"/>
+    <rect class="f" width="21" height="2" rx="1" transform="translate(692 556)"/>
+    <circle class="g" cx="1" cy="1" r="1" transform="translate(686 552)"/>
+    <rect class="f" width="96" height="2" rx="1" transform="translate(750 526)"/>
+    <rect class="f" width="82" height="2" rx="1" transform="translate(750 532)"/>
+    <rect class="f" width="92" height="2" rx="1" transform="translate(750 538)"/>
+    <rect class="f" width="78" height="2" rx="1" transform="translate(750 544)"/>
+    <rect class="f" width="87" height="2" rx="1" transform="translate(750 550)"/>
+    <rect class="f" width="96" height="2" rx="1" transform="translate(750 556)"/>
+    <rect class="f" width="37" height="2" rx="1" transform="translate(750 562)"/>
+</svg>
