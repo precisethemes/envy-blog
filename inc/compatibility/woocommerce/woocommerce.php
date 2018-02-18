@@ -1,6 +1,6 @@
 <?php
 /**
- * WooCommerce Compatibility 
+ * WooCommerce Compatibility
  *
  * @package Envy Blog
  */
@@ -27,36 +27,102 @@ add_action( 'after_setup_theme', 'envy_blog_woocommerce_support' );
 if ( !function_exists( 'envy_blog_woo_actions' ) ) {
     function envy_blog_woo_actions() {
 
-        // WooCommerce Default Remove Action
-        remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10 );
-        remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10 );
-        remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
-        remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20 );
-        remove_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_thumbnail', 10);
-        remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_upsell_display', 15 );
+        // Remove Hook Action
+        remove_action( 'woocommerce_before_main_content',           'woocommerce_breadcrumb',                   20 );
+        remove_action( 'woocommerce_before_main_content',           'woocommerce_output_content_wrapper',       10 );
+        remove_action( 'woocommerce_before_shop_loop',              'woocommerce_result_count',                 20 );
+        remove_action( 'woocommerce_after_main_content',            'woocommerce_output_content_wrapper_end',   10 );
+        remove_action( 'woocommerce_sidebar',                       'woocommerce_get_sidebar',                  10 );
+        remove_action( 'woocommerce_after_single_product_summary',  'woocommerce_upsell_display',               15 );
 
-        // WooCommerce Default Add Action
-        add_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10, 2 );
-        add_action( 'woocommerce_before_shop_loop_item_title', 'envy_blog_template_loop_product_thumbnail', 10);
-        add_action( 'woocommerce_after_single_product_summary', 'envy_blog_woo_upsell_products_limit', 15 );
+        // Add Custom Hook Action
+        add_action( 'woocommerce_before_main_content',              'envy_blog_wc_before_main_content',         10, 2 );
+        add_action( 'woocommerce_after_main_content',               'envy_blog_wc_after_main_content',          10, 2 );
+        
+        // WooCommerce Hook Filters
+        add_filter('woocommerce_show_page_title',                   '__return_false');
+        add_filter( 'woocommerce_product_thumbnails_columns',       'envy_blog_wc_single_product_thumbnails_cols',10, 1 );
+        add_filter( 'loop_shop_per_page',                           'envy_blog_wc_shop_per_page',               10, 1 );
 
-        // WooCommerce Default Filters
-        add_filter( 'woocommerce_add_to_cart_fragments', 'envy_blog_woocommerce_header_add_to_cart_fragment' );
-        add_filter( 'loop_shop_per_page', 'envy_blog_woo_product_per_page', 20 );
-        add_filter( 'loop_shop_columns', 'envy_blog_woo_product_per_row' );
-        add_filter( 'woocommerce_output_related_products_args', 'envy_blog_woo_related_products_args' );
-        add_filter( 'woocommerce_cross_sells_total', 'envy_blog_woocommerce_cross_sells_total', 10, 1 );
-
-
+        if ( defined( 'WC_VERSION' ) && version_compare( WC_VERSION, '2.3', '>=' ) ) {
+            add_filter( 'woocommerce_add_to_cart_fragments',        'envy_blog_wc_add_to_cart_fragments',       10, 1 );
+        } else {
+            add_filter( 'add_to_cart_fragments',                    'envy_blog_wc_add_to_cart_fragments',       10, 1 );
+        }
     }
 }
 add_action( 'wp','envy_blog_woo_actions' );
 
 /*--------------------------------------------------------------
+# Before Main Content
+--------------------------------------------------------------*/
+if ( !function_exists( 'envy_blog_wc_before_main_content' ) ) {
+    function envy_blog_wc_before_main_content() {
+        $sidebar_class = ' has-'.envy_blog_layout_class();
+        if ( is_shop() ) {
+            $sidebar_class = 'has-full-width';
+        }
+        if ( ! is_product() ):
+        ?>
+        <div class="row">
+            <header class="page-header">
+                <div class="page-header-content">
+                    <h1 class="page-title"><?php woocommerce_page_title(); ?></h1>
+                    <?php do_action( 'woocommerce_archive_description' ); ?>
+                </div><!-- .page-header-content -->
+            </header><!-- .page-header -->
+        </div><!-- .row -->
+        <?php endif; ?>
+        <div class="row<?php echo esc_attr( $sidebar_class ); ?>">
+            <div id="primary" class="content-area<?php echo esc_attr( $sidebar_class ); ?>">
+                <main id="main" class="site-main" role="main">
+        <?php
+    }
+}
+
+/*--------------------------------------------------------------
+# After Main Content
+--------------------------------------------------------------*/
+if ( !function_exists( 'envy_blog_wc_after_main_content' ) ) {
+    function envy_blog_wc_after_main_content() { ?>
+            </main><!-- #main -->
+        </div><!-- #primary -->
+        <?php
+        if ( !is_shop() ) {
+            get_sidebar();
+        }
+        echo '</div><!-- .row -->';
+    }
+}
+
+/*--------------------------------------------------------------
+# Product gallery thumbnail columns
+--------------------------------------------------------------*/
+if ( !function_exists( 'envy_blog_wc_single_product_thumbnails_cols' ) ) {
+    function envy_blog_wc_single_product_thumbnails_cols() {
+        $columns = 4;
+        return intval( $columns );
+    }
+}
+
+/*--------------------------------------------------------------
+# Products per page
+--------------------------------------------------------------*/
+if ( !function_exists( 'envy_blog_wc_shop_per_page' ) ) {
+    function envy_blog_wc_shop_per_page() {
+        // Default number of products if < WooCommerce 3.3.
+        if ( defined( 'WC_VERSION' ) && version_compare( WC_VERSION, '3.3', '<' ) ) {
+            $number = 12;
+        }
+        return absint( $number );
+    }
+}
+
+/*--------------------------------------------------------------
 # Ajax Cart Update
 --------------------------------------------------------------*/
-if ( ! function_exists( 'envy_blog_woocommerce_header_add_to_cart_fragment' ) ) {
-    function envy_blog_woocommerce_header_add_to_cart_fragment( $fragments ) {
+if ( ! function_exists( 'envy_blog_wc_add_to_cart_fragments' ) ) {
+    function envy_blog_wc_add_to_cart_fragments( $fragments ) {
         ob_start();
         ?>
         <span class="nav-bar-cart">
@@ -68,149 +134,5 @@ if ( ! function_exists( 'envy_blog_woocommerce_header_add_to_cart_fragment' ) ) 
 
         $fragments['span.nav-bar-cart'] = ob_get_clean();
         return $fragments;
-    }
-}
-
-/*----------------------------------------------------------------------
-# WooCommerce Layout Class
--------------------------------------------------------------------------*/
-if ( !function_exists( 'envy_blog_woocommerce_layout_class' ) ) {
-    function envy_blog_woocommerce_layout_class() {
-        global $post;
-
-        $layout = get_theme_mod( 'envy-blog_archive_page_global_sidebar', 'right-sidebar' );
-
-        // Get Layout meta
-        if ( $post ) {
-            $layout_meta = get_post_meta( $post->ID, 'specific_page_layout', true );
-        }
-
-        // Home page if Posts page is assigned
-        if ( is_home() && !( is_front_page() ) ) {
-            $queried_id     = get_option( 'page_for_posts' );
-            $layout_meta    = get_post_meta( $queried_id, 'specific_page_layout', true );
-
-            if ( $layout_meta != 'default-sidebar' && $layout_meta != '' ) {
-                $layout = get_post_meta( $queried_id, 'specific_page_layout', true );
-            }
-        } elseif ( is_page() ) {
-            $layout = get_theme_mod( 'envy-blog_page_global_sidebar', 'right-sidebar' );
-            if ( $layout_meta != 'default-sidebar' && $layout_meta != '' ) {
-                $layout = get_post_meta( $post->ID, 'specific_page_layout', true );
-            }
-        } elseif( is_single() ) {
-            $layout = get_theme_mod( 'envy-blog_wc_product_page_global_sidebar', 'full-width' );
-            if ( $layout_meta != 'default-sidebar' && $layout_meta != '' ) {
-                $layout = get_post_meta( $post->ID, 'specific_page_layout', true );
-            }
-        }
-        return esc_html( $layout );
-    }
-}
-
-/*----------------------------------------------------------------------
-# WooCommerce Sidebar Appearance
--------------------------------------------------------------------------*/
-if ( ! function_exists( 'woocommerce_get_sidebar' ) ) {
-    function woocommerce_get_sidebar(){
-        global $post;
-        $woo_layout_class   = envy_blog_woocommerce_layout_class();
-        $sidebar_class      = array( $woo_layout_class );
-
-        if ( $woo_layout_class != 'full-width' ) { ?>
-            <div id="secondary" class="<?php echo esc_attr( implode( ' ', $sidebar_class ) ); ?>" role="complementary">
-                <?php
-                /**
-                 * envy_blog_before_sidebar hook
-                 */
-                do_action( 'envy_blog_before_sidebar' ); ?>
-
-
-                <?php dynamic_sidebar( 'envy_blog_sidebar' ); ?>
-
-                <?php
-                /**
-                 * envy_blog_after_sidebar hook
-                 */
-                do_action( 'envy_blog_after_sidebar' ); ?>
-            </div><!-- #secondary -->
-            <?php
-        }
-    }
-}
-
-/*----------------------------------------------------------------------
-# Changes the default products per page
--------------------------------------------------------------------------*/
-if ( !function_exists( 'envy_blog_woo_product_per_page' ) ) {
-    function envy_blog_woo_product_per_page() {
-        $products_per_page = 12;
-        return absint( $products_per_page );
-    }
-}
-
-/*----------------------------------------------------------------------
-# Changes the default products per row
--------------------------------------------------------------------------*/
-if ( !function_exists( 'envy_blog_woo_product_per_row' ) ) {
-    function envy_blog_woo_product_per_row() {
-        $products_per_row = 4;
-        return absint( $products_per_row );
-    }
-}
-
-/*----------------------------------------------------------------------
-# Related Products Args
--------------------------------------------------------------------------*/
-if ( !function_exists( 'envy_blog_woo_related_products_args' ) ) {
-    function envy_blog_woo_related_products_args() {
-        $related_product_per_row    = 4;
-        $args['posts_per_page']     = absint( $related_product_per_row );
-        $args['columns']            = absint( $related_product_per_row );
-        return $args;
-    }
-}
-
-/*----------------------------------------------------------------------
-# Upshell Produts
--------------------------------------------------------------------------*/
-function envy_blog_woo_upsell_products_limit() {
-    woocommerce_upsell_display(
-        absint( 4 ),
-        absint( 4 )
-    );
-}
-
-/*----------------------------------------------------------------------
-# Add Product Thumbnail Size
--------------------------------------------------------------------------*/
-if ( ! function_exists( 'envy_blog_template_loop_product_thumbnail' ) ) {
-    function envy_blog_template_loop_product_thumbnail() {
-        global $post, $woocommerce;
-        if ( is_archive() ) {
-            $size = 'envy-blog-600-3x4';
-        } else {
-            $size = 'envy-blog-600-3x4';
-        }
-
-        $output = '';
-
-        if ( has_post_thumbnail() ) {
-            $output .= get_the_post_thumbnail( $post->ID, $size );
-        } else {
-            $output .= wc_placeholder_img( $size );
-            // Or alternatively setting yours width and height shop_catalog dimensions.
-            // $output .= '<img src="' . woocommerce_placeholder_img_src() . '" alt="Placeholder" width="300px" height="300px" />';
-        }
-        echo $output;
-    } 
-}
-
-/*----------------------------------------------------------------------
-# Cross Sell Products
--------------------------------------------------------------------------*/
-if ( ! function_exists( 'envy_blog_woocommerce_cross_sells_total' ) ) {
-    function envy_blog_woocommerce_cross_sells_total() {
-        return absint( 4 );
     }
 }

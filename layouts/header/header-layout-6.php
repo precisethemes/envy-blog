@@ -9,14 +9,28 @@ $cart_activate   = get_theme_mod( 'envy-blog_header_wc_cart_icon_activate', true
 ?>
 
 <div class="site-branding">
-    <h1 class="site-title">
-        <?php the_custom_logo(); ?>
-        <?php if( true == get_theme_mod( 'envy-blog_header_site_title_activate', true ) ) { ?>
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-                <?php bloginfo( 'name' ); ?>
-            </a>
-        <?php } ?>
-    </h1>
+
+    <?php if ( is_front_page() ) : ?>
+        <h1 class="site-title">
+            <?php the_custom_logo(); ?>
+
+            <?php if( true == get_theme_mod( 'envy-blog_header_site_title_activate', true ) ) { ?>
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                    <?php bloginfo( 'name' ); ?>
+                </a>
+            <?php } ?>
+        </h1>
+    <?php else : ?>
+        <p class="site-title">
+            <?php the_custom_logo(); ?>
+
+            <?php if( true == get_theme_mod( 'envy-blog_header_site_title_activate', true ) ) { ?>
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                    <?php bloginfo( 'name' ); ?>
+                </a>
+            <?php } ?>
+        </p>
+    <?php endif; ?>
 
     <?php
     if ( true == get_theme_mod( 'envy-blog_header_site_tagline_activate', true ) ) :

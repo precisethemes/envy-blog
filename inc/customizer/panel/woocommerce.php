@@ -8,21 +8,23 @@
 if( !class_exists( 'WooCommerce' ) )
     return;
 
-/*--------------------------------------------------------------
-# WooCommerce Panel
---------------------------------------------------------------*/
-Kirki::add_panel( 'envy-blog_wc_panel', array(
-    'priority'      => 121,
-    'title'         => esc_html__( 'WooCommerce', 'envy-blog' ),
-));
+if ( defined( 'WC_VERSION' ) && version_compare( WC_VERSION, '3.3', '<' ) ) {
+    /*--------------------------------------------------------------
+    # WooCommerce Panel
+    --------------------------------------------------------------*/
+    Kirki::add_panel( 'woocommerce', array(
+        'priority'      => 121,
+        'title'         => esc_html__( 'WooCommerce', 'envy-blog' ),
+    ));
+}
 
 /*--------------------------------------------------------------
 # WooCommerce Sidebar Section
 --------------------------------------------------------------*/
 Kirki::add_section( 'envy-blog_wc_product_page_sidebar_section', array(
-    'priority'      => 4,
-    'title'         => esc_html__( 'Product Sidebar', 'envy-blog' ),
-    'panel'         => 'envy-blog_wc_panel',
+    'priority'      => 1,
+    'title'         => esc_html__( 'Sidebar', 'envy-blog' ),
+    'panel'         => 'woocommerce',
     'capability'    => 'edit_theme_options',
 ));
 
@@ -32,7 +34,7 @@ Kirki::add_section( 'envy-blog_wc_product_page_sidebar_section', array(
 Kirki::add_field( 'envy-blog_config', array(
     'type'        => 'radio-image',
     'settings'    => 'envy-blog_wc_product_page_global_sidebar',
-    'label'       => esc_html__( 'Sidebar Layout', 'envy-blog' ),
+    'label'       => esc_html__( 'Product Sidebar', 'envy-blog' ),
     'description' => esc_html__( 'Select default sidebar layout. This layout will be reflected on product page of WooCommerce.', 'envy-blog' ),
     'section'     => 'envy-blog_wc_product_page_sidebar_section',
     'default'     => 'full-width',

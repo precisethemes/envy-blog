@@ -88,8 +88,6 @@ if( !function_exists( 'envy_blog_posts_category' ) ) {
         $category_singular_label   = esc_html__( 'Category: ', 'envy-blog' );
         $category_plural_label     = esc_html__( 'Categories: ', 'envy-blog' );
 
-		$category_count  = count( get_the_category() );
-
 		/* translators: used between list items, there is a space after the comma */
 		$separate_meta 	 = ', ';
 
@@ -100,7 +98,7 @@ if( !function_exists( 'envy_blog_posts_category' ) ) {
 		if ( ( envy_blog_categorized_blog() && $categories_list ) ) {
 
 			if ( is_single() && ( $category_singular_label || $category_plural_label ) != '' ) {
-                if ( 1 < $category_count ) {
+                if ( 1 < count( get_the_category() ) ) {
                     $category .= '<label class="categories-label">'.esc_html( $category_plural_label ).'</label>';
                 } else {
                     $category .= '<label class="category-label">'.esc_html( $category_singular_label ).'</label>';
@@ -125,7 +123,7 @@ if( !function_exists( 'envy_blog_posts_tags' ) ) {
 		$tags_list = get_the_tag_list( '', $separate_meta );
 		$tags 		 = '';
         // We don't want to output.
-        if ( ( envy_blog_categorized_blog() && $tags_list ) ) {
+        if ( $tags_list ) {
             if ( is_single() && ( $post_tag_label  ) != '' ) {
 
                 $tags .= '<label class="tag-label">';

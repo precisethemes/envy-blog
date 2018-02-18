@@ -1,15 +1,20 @@
-// Header Separator
-var nav_bar_height = jQuery('.nav-bar').outerHeight();
-var viewport_width = jQuery(window).width();
-var viewport_height = jQuery(window).height();
 
-jQuery(".nav-bar-separator").css("height", nav_bar_height );
+jQuery(window).resize(function() {
+    // Header Separator
+    var nav_bar_height = jQuery('.nav-bar').outerHeight();
+    var viewport_width = jQuery(window).width();
+    var viewport_height = jQuery(window).height();
 
-if(viewport_width < 992) {
-    jQuery(".main-navigation-sm, .secondary-navigation-sm").css("top", nav_bar_height).css("height", viewport_height - nav_bar_height);
-} else {
-    jQuery(".main-navigation-sm, .secondary-navigation-sm").css("top", nav_bar_height);
-}
+    jQuery(".nav-bar-separator").css("height", nav_bar_height );
+
+    if(viewport_width < 992) {
+        jQuery(".main-navigation-sm, .secondary-navigation-sm").css("top", nav_bar_height).css("height", viewport_height - nav_bar_height);
+    } else {
+        jQuery(".main-navigation-sm, .secondary-navigation-sm").css("top", nav_bar_height);
+    }
+});
+
+jQuery(window).trigger('resize');
 
 jQuery(document).ready(function($) {
 

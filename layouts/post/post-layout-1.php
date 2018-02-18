@@ -21,14 +21,10 @@ $content_order_lists    = get_theme_mod( 'envy-blog_post_layout1_content_order_l
 
         <?php
         if ( ! empty( $content_order_lists ) ) :
-
-            if ( ! has_post_thumbnail() ) {
-                array_splice( $content_order_lists, array_search('post-featured-image', $content_order_lists ), 1 );
-            }
-
+            
             foreach ( $content_order_lists as $key => $content_order ) :
 
-                if ( $content_order == 'post-featured-image' ) {
+                if ( $content_order == 'post-featured-image' && has_post_thumbnail() ) {
 
                     $img_size = 'envy-blog-960-16x9';
 

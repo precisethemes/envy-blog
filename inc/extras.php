@@ -24,6 +24,10 @@ function envy_blog_body_classes( $classes ) {
 		$classes[] = 'hfeed';
 	}
 
+	if ( class_exists( 'WooCommerce' ) && is_shop() ) {
+        $classes[] = 'wp-shop-page';
+    }
+
 	return $classes;
 }
 add_filter( 'body_class', 'envy_blog_body_classes' );

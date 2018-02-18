@@ -72,6 +72,23 @@ Kirki::add_field( 'envy-blog_config', array(
 ) );
 
 /*------------------------------------------------------
+# Hero Header Custom Control
+-------------------------------------------------------*/
+Kirki::add_field( 'envy-blog_config', array(
+    'type'        => 'custom',
+    'settings'    => 'envy-blog_hero_layout_2_custom_message',
+    'section'     => 'envy-blog_hero_layout_section',
+    'default'     => '<div class="customize-control-description customize-description description">' . esc_html__( 'To see the effect, upload background image through Customize -> Hero section -> Content', 'envy-blog' ) . '</div>',
+    'active_callback'  => array(
+        array(
+            'setting'  => 'envy-blog_hero_layout',
+            'operator' => '==',
+            'value'    => 'hero-layout-2',
+        ),
+    ),
+) );
+
+/*------------------------------------------------------
 # Content Section
 -------------------------------------------------------*/
 Kirki::add_section( 'envy-blog_hero_content_section', array(
@@ -144,7 +161,9 @@ Kirki::add_field( 'envy-blog_config', array(
     'label'       => esc_html__( 'Background Image', 'envy-blog' ),
     'description' => esc_html__( 'The recommended size for the hero content image is 1200x675 pixels.', 'envy-blog' ),
     'section'     => 'envy-blog_hero_content_section',
-    'default'     => THEME_URI . '/inc/assets/images/hero/mountain-16x9.jpg',
+    'choices'     => array(
+        'save_as' => 'id',
+    ),
 ) );
 
 /*--------------------------------------------------------------

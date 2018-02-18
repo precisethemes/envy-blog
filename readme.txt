@@ -1,7 +1,7 @@
 === Envy Blog ===
 
 Contributors: Precise Themes
-Version: 1.1
+Version: 1.3.1
 Requires at least: 4.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -89,6 +89,17 @@ Licensed under CC0 Public Domain (http://creativecommons.org/publicdomain/zero/1
 
 
 === Changelog ===
+
+Version 1.3.1
+* Fixed Post/Page title issue for featured image is removed.
+
+Version 1.3
+* Fixed H1 tags twice in theme
+* Enhancement WooCommerce Compatible with Version 3.3.1
+* Fixed window resize header height
+
+Version 1.2
+* Fixed Word brealk issue.
 
 Version 1.1
 * Added Getting Started Page.

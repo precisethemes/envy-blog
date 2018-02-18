@@ -146,6 +146,9 @@ if ( !function_exists( 'envy_blog_layout_class' ) ) {
             }
         } elseif (is_single()) {
             $layout = get_theme_mod('envy-blog_post_global_sidebar', 'right-sidebar');
+            if ( class_exists( 'WooCommerce' ) ){
+                $layout = get_theme_mod( 'envy-blog_wc_product_page_global_sidebar', 'full-width' );
+            }
             if ($layout_meta != 'default-sidebar' && $layout_meta != '') {
                 $layout = get_post_meta($post->ID, 'specific_page_layout', true);
             }
