@@ -16,7 +16,7 @@ if ( ! function_exists( 'courtyard_import_files' ) ) :
                 'local_import_widget_file'     => THEME_DIR . '/inc/demo-importer/demos/default/dummy-data/dummy-widgets.wie',
                 'local_import_customizer_file' => THEME_DIR . '/inc/demo-importer/demos/default/dummy-data/dummy-customizer.dat',
                 'import_notice'                => __( 'After you import this demo, you will have to setup the slider separately.', 'envy-blog' ),
-                'preview_url'                  => 'http://demo.precisethemes.com/envy-blog/',
+                'preview_url'                  => 'https://precisethemes.com/demo/envy-blog/',
             ),
 
         );

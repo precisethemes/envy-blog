@@ -31,7 +31,24 @@
         </header><!-- .entry-header -->
 
         <div class="entry-content">
-            <?php the_content(); ?>
+            <?php
+            /* translators: %s: Name of current post */
+            the_content(
+                sprintf(
+                    __( '<span class="screen-reader-text"> "%s"</span>', 'envy-blog' ),
+                    get_the_title()
+                )
+            );
+
+            wp_link_pages(
+                array(
+                    'before'      => '<div class="page-links">' . __( 'Pages:', 'envy-blog' ),
+                    'after'       => '</div>',
+                    'link_before' => '<span class="page-number">',
+                    'link_after'  => '</span>',
+                )
+            );
+            ?>
         </div><!-- .entry-content -->
 
         <footer class="entry-footer">

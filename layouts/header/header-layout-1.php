@@ -44,7 +44,11 @@ $cart_activate   = get_theme_mod( 'envy-blog_header_wc_cart_icon_activate', true
 </div><!-- .site-branding -->
 
 <div id="site-navigation" class="main-navigation" role="navigation">
-    <div class="main-navigation-wrap main-navigation-sm">
+    <div class="main-navigation-wrap d-none d-lg-block">
+        <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+    </div>
+
+    <div class="main-navigation-wrap main-navigation-sm d-lg-none">
         <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
     </div>
 
@@ -79,7 +83,7 @@ $cart_activate   = get_theme_mod( 'envy-blog_header_wc_cart_icon_activate', true
             <span></span>
         </div><!-- .hamburger-menu -->
     </div><!-- .nav-bar-extended -->
-    </div><!-- #site-navigation -->
+</div><!-- #site-navigation -->
 
 <?php if ( true == $search_activate ) { ?>
     <div class="nav-bar-search-wrap transition-5">

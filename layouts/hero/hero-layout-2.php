@@ -10,6 +10,7 @@ $hero_content_description        = get_theme_mod( 'envy-blog_hero_description_te
 $hero_content_image              = get_theme_mod( 'envy-blog_hero_background_image', '' );
 $hero_content_button_text        = get_theme_mod( 'envy-blog_hero_settings_button_text', 'Discover' );
 $hero_content_button_url         = get_theme_mod( 'envy-blog_hero_settings_button_url', '#' );
+$hero_content_button_open        = get_theme_mod( 'envy-blog_hero_settings_button_link_target', '_self' );
 $hero_content_color_scheme       = get_theme_mod( 'envy-blog_hero_content_section_color_scheme', 'dark' );
 $hero_content_align              = get_theme_mod( 'envy-blog_hero_text_alignment', 'center' );
 
@@ -58,7 +59,7 @@ if ( $hero_content_image && $hero_content_image !== 0  ) {
 
             <?php if ( true == $slide_button_activate ) : ?>
                 <footer class="entry-footer">
-                    <a class="<?php echo esc_attr( implode( ' ', $btn_class ) ); ?>" href="<?php echo esc_url( $hero_content_button_url );?>"><?php echo esc_html( $hero_content_button_text ); ?></a>
+                    <a class="<?php echo esc_attr( implode( ' ', $btn_class ) ); ?>" href="<?php echo esc_url( $hero_content_button_url );?>" target="<?php echo esc_attr($hero_content_button_open); ?>"><?php echo esc_html( $hero_content_button_text ); ?></a>
                 </footer><!-- .entry-footer -->
             <?php endif; ?>
         </div><!-- .hero-content -->

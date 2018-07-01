@@ -1,7 +1,7 @@
 === Envy Blog ===
 
 Contributors: Precise Themes
-Version: 1.3.1
+Version: 1.3.3
 Requires at least: 4.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -16,7 +16,7 @@ Envy Blog is distributed under the terms of the GNU GPL
 
 == Description ==
 
-Description: Envy Blog is clean, modern & minimal WordPress theme with responsive design and beautifully designed theme perfectly for blogger. Suitable for Personal Blog, Travel Blog, Niche Blog, Corporate Blog, Marketing Blog, Fashion Blog, Organic Blog, Foods Blog, Magazine and/or any kind of blog. DEMO: http://demo.precisethemes.com/envy-blog/
+Description: Envy Blog is clean, modern & minimal WordPress theme with responsive design and beautifully designed theme perfectly for blogger. Suitable for Personal Blog, Travel Blog, Niche Blog, Corporate Blog, Marketing Blog, Fashion Blog, Organic Blog, Foods Blog, Magazine and/or any kind of blog. DEMO: https://precisethemes.com/demo/envy-blog/
 
 
 == Installation ==
@@ -89,6 +89,12 @@ Licensed under CC0 Public Domain (http://creativecommons.org/publicdomain/zero/1
 
 
 === Changelog ===
+
+Version 1.3.3
+* Fixed Mobile Menu Issue
+
+Version 1.3.2
+* Fixed Post/Page custom pagination for content.
 
 Version 1.3.1
 * Fixed Post/Page title issue for featured image is removed.

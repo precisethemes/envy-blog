@@ -110,7 +110,7 @@ Kirki::add_field( 'envy-blog_config', array(
     'transport'     => 'postMessage',
     'js_vars'       => array(
         array(
-            'element'  => '.hero-section .hero-content .entry-title h1',
+            'element'  => '.hero-section .hero-content .entry-title h2',
             'function' => 'html',
         ),
     ),
@@ -232,6 +232,21 @@ Kirki::add_field( 'envy-blog_config', array(
     'label'       => esc_html__( 'URL', 'envy-blog' ),
     'section'     => 'envy-blog_hero_settings_section',
     'default'     => '#',
+) );
+
+/*------------------------------------------------------
+# Hero Button Target Control
+-------------------------------------------------------*/
+Kirki::add_field( 'envy-blog_config', array(
+    'type'        => 'select',
+    'settings'    => 'envy-blog_hero_settings_button_link_target',
+    'label'       => esc_html__( 'Link Open', 'envy-blog' ),
+    'section'     => 'envy-blog_hero_settings_section',
+    'default'     => '_self',
+    'choices'     => array(
+        '_self'          => esc_attr__( 'Same Tab', 'envy-blog' ),
+        '_blank'        => esc_attr__( 'New Tab', 'envy-blog' ),
+    ),
 ) );
 
 

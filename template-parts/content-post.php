@@ -35,36 +35,53 @@
 
         <div class="entry-meta">
             <?php
-                echo '<span class="posted-date">';
-                echo envy_blog_posts_date();
-                echo '</span>';
+            echo '<span class="posted-date">';
+            echo envy_blog_posts_date();
+            echo '</span>';
 
-                echo '<span class="posted-author">';
-                echo envy_blog_posts_author();
-                echo '</span>';
+            echo '<span class="posted-author">';
+            echo envy_blog_posts_author();
+            echo '</span>';
 
-                echo '<span class="posted-comment">';
-                echo envy_blog_posts_comment();
-                echo '</span>';
+            echo '<span class="posted-comment">';
+            echo envy_blog_posts_comment();
+            echo '</span>';
             ?>
         </div><!-- .entry-meta -->
 
         <div class="entry-content">
 
-            <?php the_content(); ?>
+            <?php
+            /* translators: %s: Name of current post */
+            the_content(
+                sprintf(
+                    __( '<span class="screen-reader-text"> "%s"</span>', 'envy-blog' ),
+                    get_the_title()
+                )
+            );
+
+            wp_link_pages(
+                array(
+                    'before'      => '<div class="page-links">' . __( 'Pages:', 'envy-blog' ),
+                    'after'       => '</div>',
+                    'link_before' => '<span class="page-number">',
+                    'link_after'  => '</span>',
+                )
+            );
+            ?>
 
         </div><!-- .entry-content -->
 
         <footer class="entry-footer">
             <div class="entry-meta">
                 <?php
-                    echo '<span class="posted-category">';
-                    echo envy_blog_posts_category();
-                    echo '</span>';
+                echo '<span class="posted-category">';
+                echo envy_blog_posts_category();
+                echo '</span>';
 
-                    echo '<span class="posted-tag">';
-                    echo envy_blog_posts_tags();
-                    echo '</span>';
+                echo '<span class="posted-tag">';
+                echo envy_blog_posts_tags();
+                echo '</span>';
                 ?>
             </div><!-- .entry-meta -->
 

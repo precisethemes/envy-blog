@@ -53,7 +53,24 @@ $content_order_lists    = get_theme_mod( 'envy-blog_page_setting_content_order_l
                 } elseif ( $content_order == 'page-content' ) { ?>
 
                     <div class="entry-content order-position order-position-<?php echo esc_attr( $key ); ?>">
-                        <?php the_content(); ?>
+                        <?php
+                        /* translators: %s: Name of current post */
+                        the_content(
+                            sprintf(
+                                __( '<span class="screen-reader-text"> "%s"</span>', 'envy-blog' ),
+                                get_the_title()
+                            )
+                        );
+
+                        wp_link_pages(
+                            array(
+                                'before'      => '<div class="page-links">' . __( 'Pages:', 'envy-blog' ),
+                                'after'       => '</div>',
+                                'link_before' => '<span class="page-number">',
+                                'link_after'  => '</span>',
+                            )
+                        );
+                        ?>
                     </div><!-- .entry-content -->
 
                 <?php

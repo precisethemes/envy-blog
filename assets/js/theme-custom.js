@@ -1,64 +1,61 @@
 
-jQuery(window).resize(function() {
-    // Header Separator
-    var nav_bar_height = jQuery('.nav-bar').outerHeight();
-    var viewport_width = jQuery(window).width();
-    var viewport_height = jQuery(window).height();
+// Header Separator
+var nav_bar_height  = jQuery('.nav-bar').outerHeight();
+var viewport_width  = jQuery(window).width();
+var viewport_height = jQuery(window).height();
 
-    jQuery(".nav-bar-separator").css("height", nav_bar_height );
+jQuery(".nav-bar-separator").css("height", nav_bar_height );
 
-    if(viewport_width < 992) {
-        jQuery(".main-navigation-sm, .secondary-navigation-sm").css("top", nav_bar_height).css("height", viewport_height - nav_bar_height);
-    } else {
-        jQuery(".main-navigation-sm, .secondary-navigation-sm").css("top", nav_bar_height);
-    }
+if(viewport_width < 992) {
+    jQuery(".main-navigation-sm, .secondary-navigation-sm").css("top", nav_bar_height).css("height", viewport_height - nav_bar_height);
+} else {
+    jQuery(".main-navigation-sm, .secondary-navigation-sm").css("top", nav_bar_height);
+}
+
+// Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = jQuery('.nav-bar').outerHeight();
+
+jQuery(window).scroll(function(event){
+    didScroll = true;
 });
 
-jQuery(window).trigger('resize');
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 200);
 
-jQuery(document).ready(function($) {
+function hasScrolled() {
+    var st = jQuery(this).scrollTop();
 
-	// Hide Header on on scroll down
-	var didScroll;
-	var lastScrollTop = 0;
-	var delta = 5;
-	var navbarHeight = $('.nav-bar').outerHeight();
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
 
-	$(window).scroll(function(event){
-		didScroll = true;
-	});
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight) {
 
-	setInterval(function() {
-		if (didScroll) {
-			hasScrolled();
-			didScroll = false;
-		}
-	}, 200);
+        // Scroll Down
+        jQuery('.nav-bar').removeClass('nav-down').css("top",-navbarHeight-20 );
+    } else {
+        // Scroll Up
+        if(st + jQuery(window).height() < jQuery(document).height()) {
+            jQuery('.nav-bar').addClass('nav-down').css("top", "0" );
+        }
+    }
 
-	function hasScrolled() {
-		var st = $(this).scrollTop();
+    lastScrollTop = st;
+}
 
-		// Make sure they scroll more than delta
-		if(Math.abs(lastScrollTop - st) <= delta)
-			return;
+( function( $ ) {
+    'use strict';
 
-		// If they scrolled down and are past the navbar, add class .nav-up.
-		// This is necessary so you never see what is "behind" the navbar.
-		if (st > lastScrollTop && st > navbarHeight) {
-
-			// Scroll Down
-			$('.nav-bar').removeClass('nav-down').css("top",-navbarHeight-20 );
-		} else {
-			// Scroll Up
-			if(st + $(window).height() < $(document).height()) {
-                $('.nav-bar').addClass('nav-down').css("top", "0" );
-			}
-		}
-
-		lastScrollTop = st;
-	}
-
-	// Nav Bar Search Form
+    // Nav Bar Search Form
     $( '.nav-bar-search-icon' ).on( 'click', function() {
         $('body').on('wheel.modal mousewheel.modal', function () { return false; } );
         $( '.nav-bar-search-wrap' ).addClass( 'is-active' );
@@ -95,17 +92,12 @@ jQuery(document).ready(function($) {
     });
 
     // Masonry
-    if ( ( typeof jQuery.fn.masonry !== 'undefined' ) ) {
-        $(window).load(function(){
-            var $container = $( '.masonry' );
-            $container.imagesLoaded( function(){
-                $container.masonry({
-                    itemSelector : 'article.child-element',
-                    transitionDuration: 0
-                });
-            });
-            $(window).resize(function () {
-                $container.masonry('bindResize')
+    if ( ( typeof $.fn.masonry !== 'undefined' ) ) {
+        var $container = $( '.masonry' );
+        $container.imagesLoaded( function(){
+            $container.masonry({
+                itemSelector : 'article.child-element',
+                transitionDuration: 0
             });
         });
     }
@@ -142,4 +134,5 @@ jQuery(document).ready(function($) {
             }, 800);
         });
     }
-});
+    
+} )( jQuery );

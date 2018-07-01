@@ -209,6 +209,11 @@ require THEME_DIR . '/inc/welcome-screen/class-welcome-screen.php';
  */
 require THEME_DIR . '/inc/class-tgm-plugin-activation.php';
 
+/**
+ * Polylang Compatible For Customizer Settings.
+ */
+require THEME_DIR . '/inc/compatibility/polylang/customizer-polylang.php';
+
 add_action( 'tgmpa_register', 'envy_blog_required_plugins' );
 /**
  * Register the required plugins for this theme.
@@ -330,5 +335,3 @@ function envy_blog_required_plugins() {
     );
     tgmpa( $plugins, $config );
 }
-
-

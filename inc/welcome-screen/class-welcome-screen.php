@@ -241,7 +241,7 @@ if ( ! class_exists( 'Envy_Blog_Welcome_Screen' ) ) :
                     <tr>
                         <td><?php esc_html_e( 'Built-in Custom Widgets', 'envy-blog' ); ?></td>
                         <td><?php esc_html_e( '3', 'envy-blog' ); ?></td>
-                        <td><?php esc_html_e( '4', 'envy-blog' ); ?></td>
+                        <td><?php esc_html_e( '6', 'envy-blog' ); ?></td>
                     </tr>
 
                     <tr>

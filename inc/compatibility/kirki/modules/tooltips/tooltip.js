@@ -3,7 +3,7 @@ jQuery( document ).ready( function() {
 
 	function kirkiTooltipAdd( control ) {
 		_.each( kirkiTooltips, function( tooltip ) {
-			var trigger,
+			let trigger,
 			    controlID,
 			    content;
 
@@ -39,7 +39,7 @@ jQuery( document ).ready( function() {
 		});
 	}
 
-	wp.customize.control.each( function( control, key ) {
+	wp.customize.control.each( function( control ) {
 		wp.customize.section( control.section(), function( section ) {
 			if ( section.expanded() || wp.customize.settings.autofocus.control === control.id ) {
 				kirkiTooltipAdd( control );

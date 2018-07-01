@@ -1,10 +1,10 @@
 /*
 Theme Name: Envy Blog
-Version: 1.3.1
+Version: 1.3.3
 Author: Precise Themes
 Author URI: https://precisethemes.com/
 Theme URI: http://precisethemes.com/envy-blog/
-Description: Envy Blog is clean, modern & minimal WordPress theme with responsive design and beautifully designed theme perfectly for blogger. Suitable for Personal Blog, Travel Blog, Niche Blog, Corporate Blog, Marketing Blog, Fashion Blog, Organic Blog, Foods Blog, Magazine and/or any kind of blog. DEMO: http://demo.precisethemes.com/envy-blog/
+Description: Envy Blog is clean, modern & minimal WordPress theme with responsive design and beautifully designed theme perfectly for blogger. Suitable for Personal Blog, Travel Blog, Niche Blog, Corporate Blog, Marketing Blog, Fashion Blog, Organic Blog, Foods Blog, Magazine and/or any kind of blog. DEMO: https://precisethemes.com/demo/envy-blog/
 Tags: grid-layout, one-column, two-columns, left-sidebar, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu, custom-logo, featured-images, footer-widgets, full-width-template, theme-options, threaded-comments, translation-ready, blog, e-commerce
 
 License: GNU General Public License v2 or later
@@ -525,6 +525,51 @@ a:active {
 
 .row::after {
 	clear: both;
+}
+
+.d-none {
+	display: none !important;
+}
+
+.d-block {
+	display: block !important;
+}
+
+@media (min-width: 576px) {
+	.d-sm-none {
+		display: none !important;
+	}
+	.d-sm-block {
+		display: block !important;
+	}
+}
+
+@media (min-width: 768px) {
+	.d-md-none {
+		display: none !important;
+	}
+	.d-md-block {
+		display: block !important;
+	}
+}
+
+@media (min-width: 992px) {
+	.d-lg-none {
+		display: none !important;
+	}
+	.d-lg-block {
+		display: block !important;
+	}
+}
+
+@media (min-width: 1200px) {
+	.d-xl-none {
+		display: none !important;
+	}
+
+	.d-xl-block {
+		display: block !important;
+	}
 }
 
 /*--------------------------------------------------------------
@@ -2841,12 +2886,9 @@ object {
 ----------------------------------*/
 .featured-image,
 .featured-image img {
+	display: block;
 	margin: 0;
 	position: relative;
-}
-
-.featured-image img {
-	display: block;
 }
 
 .featured-image a.post-format::before {
@@ -2906,10 +2948,6 @@ object {
 .featured-image:hover a.post-format::after {
 	top: 50%;
 	opacity: 1;
-}
-
-.featured-image img {
-	display: block;
 }
 
 /*
@@ -3256,7 +3294,8 @@ object {
 
 .pagination .page-numbers,
 .woocommerce .woocommerce-pagination ul.page-numbers li,
-.woocommerce-page .woocommerce-pagination ul.page-numbers li {
+.woocommerce-page .woocommerce-pagination ul.page-numbers li,
+.entry-content .page-links {
 	border: 0;
 	font-size: .875em;
 	line-height: 1em;
@@ -3277,6 +3316,8 @@ object {
 }
 
 .pagination .page-numbers,
+.entry-content .page-number,
+.entry-content .page-number a,
 .woocommerce nav.woocommerce-pagination ul li a,
 .woocommerce nav.woocommerce-pagination ul li span {
 	padding: .6em 1.2em;

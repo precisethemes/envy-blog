@@ -21,7 +21,7 @@ $content_order_lists    = get_theme_mod( 'envy-blog_post_layout1_content_order_l
 
         <?php
         if ( ! empty( $content_order_lists ) ) :
-            
+
             foreach ( $content_order_lists as $key => $content_order ) :
 
                 if ( $content_order == 'post-featured-image' && has_post_thumbnail() ) {
@@ -41,39 +41,54 @@ $content_order_lists    = get_theme_mod( 'envy-blog_post_layout1_content_order_l
                         <img src="<?php echo esc_url( $image_path[0] ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
                     </figure><!-- .featured-image -->
 
-                <?php
+                    <?php
                 } elseif ( $content_order == 'post-title' ) { ?>
 
                     <header class="entry-header order-position order-position-<?php echo esc_attr( $key ); ?>">
                         <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
                     </header><!-- .entry-header -->
 
-                <?php
+                    <?php
                 } elseif ( $content_order == 'post-meta' ) { ?>
 
                     <div class="entry-meta order-position order-position-<?php echo esc_attr( $key ); ?>">
                         <?php
-                            echo '<span class="posted-date">';
-                            echo envy_blog_posts_date();
-                            echo '</span>';
+                        echo '<span class="posted-date">';
+                        echo envy_blog_posts_date();
+                        echo '</span>';
 
-                            echo '<span class="posted-author">';
-                            echo envy_blog_posts_author();
-                            echo '</span>';
+                        echo '<span class="posted-author">';
+                        echo envy_blog_posts_author();
+                        echo '</span>';
 
-                            echo '<span class="posted-comment">';
-                            echo envy_blog_posts_comment();
-                            echo '</span>';
+                        echo '<span class="posted-comment">';
+                        echo envy_blog_posts_comment();
+                        echo '</span>';
                         ?>
 
                     </div><!-- .entry-meta -->
 
-                <?php
+                    <?php
                 } elseif ( $content_order == 'post-content' ) { ?>
 
                     <div class="entry-content order-position order-position-<?php echo esc_attr( $key ); ?>">
                         <?php
-                            the_content();
+                        /* translators: %s: Name of current post */
+                        the_content(
+                            sprintf(
+                                __( '<span class="screen-reader-text"> "%s"</span>', 'envy-blog' ),
+                                get_the_title()
+                            )
+                        );
+
+                        wp_link_pages(
+                            array(
+                                'before'      => '<div class="page-links">' . __( 'Pages:', 'envy-blog' ),
+                                'after'       => '</div>',
+                                'link_before' => '<span class="page-number">',
+                                'link_after'  => '</span>',
+                            )
+                        );
                         ?>
                     </div><!-- .entry-content -->
 
@@ -82,27 +97,27 @@ $content_order_lists    = get_theme_mod( 'envy-blog_post_layout1_content_order_l
 
                         <div class="entry-meta">
                             <?php
-                                echo '<span class="posted-category">';
-                                echo envy_blog_posts_category();
-                                echo '</span>';
+                            echo '<span class="posted-category">';
+                            echo envy_blog_posts_category();
+                            echo '</span>';
 
-                                echo '<span class="posted-tag">';
-                                echo envy_blog_posts_tags();
-                                echo '</span>';
+                            echo '<span class="posted-tag">';
+                            echo envy_blog_posts_tags();
+                            echo '</span>';
                             ?>
                         </div><!-- .entry-meta -->
 
 
                         <?php
-                            // We don't want to output .entry-footer if it will be empty, so make sure its not.
-                            if ( get_edit_post_link() ) {
-                                envy_blog_edit_link();
-                            }
+                        // We don't want to output .entry-footer if it will be empty, so make sure its not.
+                        if ( get_edit_post_link() ) {
+                            envy_blog_edit_link();
+                        }
                         ?>
 
                     </footer><!-- .entry-footer -->
 
-                <?php
+                    <?php
                 }
             endforeach;
         endif;
