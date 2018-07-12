@@ -4,9 +4,9 @@
  * @package Envy Blog
  */
 $hero_layout                     = get_theme_mod( 'envy-blog_hero_layout', 'hero-layout-1' );
-$hero_content_title              = get_theme_mod( 'envy-blog_hero_title_text', 'Hero Header Title' );
-$hero_content_subtitle           = get_theme_mod( 'envy-blog_hero_subtitle_text', 'Hero Header Subtitle' );
-$hero_content_description        = get_theme_mod( 'envy-blog_hero_description_text', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat' );
+$hero_content_title              = get_theme_mod( 'envy-blog_hero_title_text', '' );
+$hero_content_subtitle           = get_theme_mod( 'envy-blog_hero_subtitle_text', '' );
+$hero_content_description        = get_theme_mod( 'envy-blog_hero_description_text', '' );
 $hero_content_image              = get_theme_mod( 'envy-blog_hero_background_image', '' );
 $hero_content_button_text        = get_theme_mod( 'envy-blog_hero_settings_button_text', 'Discover' );
 $hero_content_button_url         = get_theme_mod( 'envy-blog_hero_settings_button_url', '#' );

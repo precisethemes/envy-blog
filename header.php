@@ -58,7 +58,7 @@
     </div><!-- .row -->
 
     <?php
-    $hero_homepage_activate         = get_theme_mod( 'envy-blog_hero_section_activate', true );
+    $hero_homepage_activate         = get_theme_mod( 'envy-blog_hero_section_activate' );
     $hero_static_homepage_activate  = get_theme_mod( 'envy-blog_hero_section_on_static_page_activate' );
     if( ( true == $hero_homepage_activate  && is_home() ) || ( true == $hero_static_homepage_activate  && is_front_page() ) ) : ?>
     <div class="row">

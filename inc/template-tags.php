@@ -207,7 +207,7 @@ if ( !function_exists( 'envy_blog_archive_title' ) ) {
 		} elseif ( is_tag() ) {
 			$title = sprintf( __( '<label><span>Tag %s', 'envy-blog' ), '</span></label>' . single_tag_title( '', false ) );
 		} elseif ( is_author() ) {
-			$title = sprintf( __( '%s', 'envy-blog' ), get_the_author() );
+			$title = get_the_author();
 		} elseif ( is_year() ) {
 			$title = sprintf( __( 'Year: %s', 'envy-blog' ), '<span>' . get_the_date( _x( 'Y', 'yearly archives date format', 'envy-blog' ) ) . '</span>' );
 		} elseif ( is_month() ) {

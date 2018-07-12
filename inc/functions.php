@@ -18,11 +18,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 if ( !function_exists( 'envy_blog_scripts' ) ) {
     function envy_blog_scripts() {
 
+        $suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
+
         // Default Theme Font - Roboto
         wp_enqueue_style( 'Roboto', 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900', false );
 
         // Load Font Awesome File
-        wp_enqueue_style( 'font-awesome', THEME_URI .'/assets/css/font-awesome.min.css', false, '4.7.0', 'all' );
+        wp_enqueue_style( 'font-awesome', ENVY_BLOG_THEME_URI .'/assets/css/font-awesome.min.css', false, '4.7.0', 'all' );
 
         wp_enqueue_style( 'envy-blog-style', get_stylesheet_uri() );
 
@@ -33,7 +35,7 @@ if ( !function_exists( 'envy_blog_scripts' ) ) {
         }
 
         // Custom JS
-        wp_enqueue_script( 'envy-blog-custom', THEME_URI . '/assets/js/theme-custom.js', array( 'jquery' ), THEME_VERSION, true );
+        wp_enqueue_script( 'envy-blog-custom', ENVY_BLOG_THEME_URI . '/assets/js/theme-custom'.$suffix.'.js', array( 'jquery' ), ENVY_BLOG_THEME_VERSION, true );
 
         if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
             wp_enqueue_script( 'comment-reply' );
@@ -48,18 +50,20 @@ add_action( 'wp_enqueue_scripts', 'envy_blog_scripts' );
 if ( !function_exists( 'envy_blog_admin_scripts' ) ) {
     function envy_blog_admin_scripts() {
 
+        $suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
+
         // Get Current Screen Name
         $current_screen = get_current_screen();
 
         if ( $current_screen->id == "customize" || $current_screen->id == "widgets" ) {
             // Run some code, only on the customizer and widgets page
-            wp_enqueue_style( 'envy-blog-customizer-style', THEME_URI .'/inc/assets/css/customizer-style.css', false, THEME_VERSION, 'all' );
+            wp_enqueue_style( 'envy-blog-customizer-style', ENVY_BLOG_THEME_URI .'/inc/assets/css/customizer-style'.$suffix.'.css', false, ENVY_BLOG_THEME_VERSION, 'all' );
         }
         else {
             // Run some code, only on the post and page
-            wp_enqueue_style( 'envy-blog-backend-style', THEME_URI .'/inc/assets/css/backend-style.css', false, THEME_VERSION, 'all' );
+            wp_enqueue_style( 'envy-blog-backend-style', ENVY_BLOG_THEME_URI .'/inc/assets/css/backend-style'.$suffix.'.css', false, ENVY_BLOG_THEME_VERSION, 'all' );
 
-            wp_enqueue_script( 'envy-blog-backend-script', THEME_URI . '/inc/assets/js/backend-script.js', array('jquery'),THEME_VERSION, true );
+            wp_enqueue_script( 'envy-blog-backend-script', ENVY_BLOG_THEME_URI . '/inc/assets/js/backend-script'.$suffix.'.js', array('jquery'),ENVY_BLOG_THEME_VERSION, true );
         }
 
     }

@@ -9,7 +9,7 @@
 # Configuration for Kirki Toolkit
 --------------------------------------------------------------*/
 function envy_blog_kirki_configuration() {
-    return array( 'url_path'     => THEME_URI . '/inc/compatibility/kirki/' );
+    return array( 'url_path'     => ENVY_BLOG_THEME_URI . '/inc/compatibility/kirki/' );
 }
 add_filter( 'kirki/config', 'envy_blog_kirki_configuration' );
 
@@ -91,6 +91,6 @@ function envy_blog_customizer_partial_blogdescription() {
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
 function envy_blog_customize_preview_js() {
-    wp_enqueue_script( 'envy_blog_customizer', THEME_URI . '/inc/assets/js/customizer-preview.js', array( 'customize-preview' ), THEME_VERSION, true );
+    wp_enqueue_script( 'envy_blog_customizer', ENVY_BLOG_THEME_URI . '/inc/assets/js/customizer-preview.js', array( 'customize-preview' ), ENVY_BLOG_THEME_VERSION, true );
 }
 add_action( 'customize_preview_init', 'envy_blog_customize_preview_js' );

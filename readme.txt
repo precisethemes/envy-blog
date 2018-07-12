@@ -1,7 +1,7 @@
 === Envy Blog ===
 
 Contributors: Precise Themes
-Version: 1.3.3
+Version: 1.3.5
 Requires at least: 4.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -90,6 +90,15 @@ Licensed under CC0 Public Domain (http://creativecommons.org/publicdomain/zero/1
 
 === Changelog ===
 
+Version 1.3.5
+* Added Back compatible functionality for PHP version.
+* Enhancement of theme coding standard.
+
+Version 1.3.4
+* Fixed Blog List layout issue for the blog/archive page.
+* Added Polylang Compatibility for the customizer settings.
+* Added to load theme custom minify js and css files.
+
 Version 1.3.3
 * Fixed Mobile Menu Issue
 
@@ -118,7 +127,6 @@ Version 1.0.2
 
 Version 1.0.1
 * Fixed Some Issues
-
 
 Version 1.0.0
 * Initial release - Dec 05, 2017

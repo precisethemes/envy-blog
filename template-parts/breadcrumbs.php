@@ -13,7 +13,7 @@ if ( is_front_page() || is_home() ) {
 
 
 if ( ! function_exists( 'breadcrumb_trail' ) ) {
-    require THEME_DIR . '/inc/compatibility/breadcrumbs/breadcrumbs.php';
+    require ENVY_BLOG_THEME_DIR . '/inc/compatibility/breadcrumbs/breadcrumbs.php';
 }
 ?>
 

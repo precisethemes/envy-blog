@@ -50,11 +50,11 @@ if ( ! class_exists( 'Envy_Blog_Welcome_Screen' ) ) :
 
             <div data-dismissible="envy-blog-welcome-forever" class="updated notice notice-success is-dismissible welcome-notice">
 
-                <h1><?php printf( esc_html__( 'Welcome to %s', 'envy-blog' ), THEME_NAME ); ?></h1>
-                <p><?php printf( esc_html__( 'Welcome! Thank you for choosing %s ! To fully take advantage of the best our theme can offer please make sure you visit our %swelcome page%s.', 'envy-blog' ),THEME_NAME,'<a href="' . esc_url( admin_url( 'themes.php?page=envy-blog-welcome' ) ) . '">', '</a>' ); ?></p>
+                <h1><?php printf( esc_html__( 'Welcome to %s', 'envy-blog' ), ENVY_BLOG_THEME_NAME ); ?></h1>
+                <p><?php printf( esc_html__( 'Welcome! Thank you for choosing %1$s! To fully take advantage of the best our theme can offer please make sure you visit our %2$swelcome page%3$s.', 'envy-blog' ),ENVY_BLOG_THEME_NAME,'<a href="' . esc_url( admin_url( 'themes.php?page=envy-blog-welcome' ) ) . '">', '</a>' ); ?></p>
                 <p>
                     <a class="button-secondary" href="<?php echo esc_url( admin_url( 'themes.php?page=envy-blog-welcome' ) ); ?>">
-                        <?php printf( esc_html__( 'Get started with %s', 'envy-blog' ), THEME_NAME ); ?>
+                        <?php printf( esc_html__( 'Get started with %s', 'envy-blog' ), ENVY_BLOG_THEME_NAME ); ?>
                     </a>
                 </p>
                 <button type="button" class="notice-dismiss">
@@ -79,12 +79,12 @@ if ( ! class_exists( 'Envy_Blog_Welcome_Screen' ) ) :
                 <div class="flex theme-info">
                     <div class="theme-details">
                         <h4><?php echo sprintf( __( 'Hello, %s,', 'envy-blog' ), '<span>' . esc_html( ucfirst( $user->display_name ) ) . '</span>' ); ?></h4>
-                        <h1 class="entry-title"><?php echo sprintf( __( 'Welcome to %s version %s', 'envy-blog' ), THEME_NAME, THEME_VERSION ); ?></h1>
-                        <p class="entry-content"><?php echo wp_kses_post( THEME_DESCRIPTION ); ?></p>
+                        <h1 class="entry-title"><?php echo sprintf( __( 'Welcome to %1$s version %2$s', 'envy-blog' ), ENVY_BLOG_THEME_NAME, ENVY_BLOG_THEME_VERSION ); ?></h1>
+                        <p class="entry-content"><?php echo wp_kses_post( ENVY_BLOG_THEME_DESC ); ?></p>
                     </div>
 
                     <figure class="theme-screenshot">
-                        <img src="<?php echo esc_url( THEME_URI ) . '/screenshot.png'; ?>" />
+                        <img src="<?php echo esc_url( ENVY_BLOG_THEME_URI ) . '/screenshot.png'; ?>" />
                     </figure>
                 </div>
 
@@ -105,7 +105,7 @@ if ( ! class_exists( 'Envy_Blog_Welcome_Screen' ) ) :
                     <?php $this->changelog();?>
                     <div class="about-page-theme-rating">
                         <p><?php
-                            printf( __( 'Have you ❤ using %s? Please rate ⭐⭐⭐⭐⭐ our theme %s on WordPress.org ☺ Thank you', 'envy-blog' ), THEME_NAME, $rating_link ); ?></p>
+                            printf( __( 'Have you ❤ using %1$s? Please rate ⭐⭐⭐⭐⭐ our theme %2$s on WordPress.org ☺ Thank you', 'envy-blog' ), ENVY_BLOG_THEME_NAME, $rating_link ); ?></p>
                     </div>
                 </div>
             </div>
@@ -129,7 +129,7 @@ if ( ! class_exists( 'Envy_Blog_Welcome_Screen' ) ) :
                 <section>
                     <h3><?php esc_html_e( 'Support Forum', 'envy-blog' ); ?></h3>
 
-                    <p><?php printf( __( 'Need help to setup your website with %s theme? Visit our support forum and browse support topics or create new, one of our support member will follow and help you to solver your issue.', 'envy-blog' ), THEME_NAME ); ?></p>
+                    <p><?php printf( __( 'Need help to setup your website with %s theme? Visit our support forum and browse support topics or create new, one of our support member will follow and help you to solver your issue.', 'envy-blog' ), ENVY_BLOG_THEME_NAME ); ?></p>
 
                     <p><a class="button button-primary button-large" href="<?php echo esc_url( 'https://precisethemes.com/support-forum/forum/envy-blog/' ); ?>" target="_blank"><?php esc_html_e( 'Support Forum', 'envy-blog' ); ?></a></p>
                 </section>
@@ -175,7 +175,7 @@ if ( ! class_exists( 'Envy_Blog_Welcome_Screen' ) ) :
                 <section>
                     <h3><?php esc_html_e( 'Support Forum', 'envy-blog' ); ?></h3>
 
-                    <p><?php printf( __( 'Need help to setup your website with %s theme? Visit our support forum and browse support topics or create new, one of our support member will follow and help you to solver your issue.', 'envy-blog' ), THEME_NAME ); ?></p>
+                    <p><?php printf( __( 'Need help to setup your website with %s theme? Visit our support forum and browse support topics or create new, one of our support member will follow and help you to solver your issue.', 'envy-blog' ), ENVY_BLOG_THEME_NAME ); ?></p>
 
                     <p><a class="button button-primary button-large" href="<?php echo esc_url( 'https://precisethemes.com/support-forum/forum/envy-blog/' ); ?>" target="_blank"><?php esc_html_e( 'Visit Support Forum', 'envy-blog' ); ?></a></p>
                 </section>
@@ -383,6 +383,12 @@ if ( ! class_exists( 'Envy_Blog_Welcome_Screen' ) ) :
                     </tr>
 
                     <tr>
+                        <td><?php esc_html_e( 'Polylang Compatible', 'envy-blog' ); ?></td>
+                        <td class="greenFeature"><span class="dashicons dashicons-yes dash-green"></span></td>
+                        <td class="greenFeature"><span class="dashicons dashicons-yes dash-green"></span></td>
+                    </tr>
+
+                    <tr>
                         <td><?php esc_html_e( 'Theme Support', 'envy-blog' ); ?></td>
                         <td><?php esc_html_e( 'Support via Forum', 'envy-blog' ); ?></td>
                         <td><?php esc_html_e( 'Quick Ticket Support', 'envy-blog' ); ?></td>
@@ -391,8 +397,8 @@ if ( ! class_exists( 'Envy_Blog_Welcome_Screen' ) ) :
 
                 <br>
 
-                <p><?php printf( __( 'Need more features and customization option? Try Pro Version of %s theme.', 'envy-blog' ), THEME_NAME ); ?>
-                <p><a class="button button-primary button-large" href="<?php echo esc_url( 'https://precisethemes.com/envy-blog-pro/' );?>" target="_blank"><?php printf( __( '<span>View %s Pro Details', 'envy-blog'), THEME_NAME ); ?></a><br></p>
+                <p><?php printf( __( 'Need more features and customization option? Try Pro Version of %s theme.', 'envy-blog' ), ENVY_BLOG_THEME_NAME ); ?>
+                <p><a class="button button-primary button-large" href="<?php echo esc_url( 'https://precisethemes.com/envy-blog-pro/' );?>" target="_blank"><?php printf( __( '<span>View %s Pro Details', 'envy-blog'), ENVY_BLOG_THEME_NAME ); ?></a><br></p>
             </div>
             <?php
         }

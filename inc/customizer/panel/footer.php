@@ -85,7 +85,7 @@ Kirki::add_field( 'envy-blog_config', array(
     'section'     => 'envy-blog_footer_widgets_section',
     'default'     => 'footer-layout-8',
     'choices'     => array(
-        'footer-layout-8'           => THEME_URI . '/inc/assets/images/footer/footer-layout-8.svg',
+        'footer-layout-8'           => ENVY_BLOG_THEME_URI . '/inc/assets/images/footer/footer-layout-8.svg',
     ),
 ) );
 

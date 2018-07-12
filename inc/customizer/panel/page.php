@@ -34,7 +34,7 @@ Kirki::add_field( 'envy-blog_config', array(
     'section'     => 'envy-blog_page_layout_section',
     'default'     => 'page-layout-1',
     'choices'     => array(
-        'page-layout-1'         => THEME_URI . '/inc/assets/images/page/page-layout-1.svg',
+        'page-layout-1'         => ENVY_BLOG_THEME_URI . '/inc/assets/images/page/page-layout-1.svg',
     ),
 ) );
 
@@ -90,9 +90,9 @@ Kirki::add_field( 'envy-blog_config', array(
     'section'     => 'envy-blog_page_sidebar_section',
     'default'     => 'right-sidebar',
     'choices'     => array(
-        'left-sidebar'      => THEME_URI . '/inc/assets/images/sidebar/left-sidebar.svg',
-        'full-width'        => THEME_URI . '/inc/assets/images/sidebar/no-sidebar.svg',
-        'right-sidebar'     => THEME_URI . '/inc/assets/images/sidebar/right-sidebar.svg',
+        'left-sidebar'      => ENVY_BLOG_THEME_URI . '/inc/assets/images/sidebar/left-sidebar.svg',
+        'full-width'        => ENVY_BLOG_THEME_URI . '/inc/assets/images/sidebar/no-sidebar.svg',
+        'right-sidebar'     => ENVY_BLOG_THEME_URI . '/inc/assets/images/sidebar/right-sidebar.svg',
 
     ),
 ) );

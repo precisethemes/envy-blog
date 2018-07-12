@@ -33,8 +33,8 @@ Kirki::add_field( 'envy-blog_config', array(
     'section'     => 'envy-blog_header_layout_section',
     'default'     => 'header-layout-1',
     'choices'     => array(
-        'header-layout-1'         => THEME_URI . '/inc/assets/images/header/layout-1.svg',
-        'header-layout-6'         => THEME_URI . '/inc/assets/images/header/layout-6.svg',
+        'header-layout-1'         => ENVY_BLOG_THEME_URI . '/inc/assets/images/header/layout-1.svg',
+        'header-layout-6'         => ENVY_BLOG_THEME_URI . '/inc/assets/images/header/layout-6.svg',
     ),
 ) );
 

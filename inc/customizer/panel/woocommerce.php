@@ -39,9 +39,9 @@ Kirki::add_field( 'envy-blog_config', array(
     'section'     => 'envy-blog_wc_product_page_sidebar_section',
     'default'     => 'full-width',
     'choices'     => array(
-        'left-sidebar'      => THEME_URI . '/inc/assets/images/sidebar/left-sidebar.svg',
-        'full-width'        => THEME_URI . '/inc/assets/images/sidebar/no-sidebar.svg',
-        'right-sidebar'     => THEME_URI . '/inc/assets/images/sidebar/right-sidebar.svg',
+        'left-sidebar'      => ENVY_BLOG_THEME_URI . '/inc/assets/images/sidebar/left-sidebar.svg',
+        'full-width'        => ENVY_BLOG_THEME_URI . '/inc/assets/images/sidebar/no-sidebar.svg',
+        'right-sidebar'     => ENVY_BLOG_THEME_URI . '/inc/assets/images/sidebar/right-sidebar.svg',
 
     ),
 ) );

@@ -54,16 +54,18 @@ if ( ! class_exists( 'PAnD' ) ) {
 
             if(is_customize_preview()) return;
 
+            $suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
+
             wp_enqueue_script(
-                'courtyard-dismissible-notices',
-                get_template_directory_uri() . '/inc/notices/dismiss-notice.js',
+                'envy-blog-dismissible-notices',
+                get_template_directory_uri() . '/inc/assets/js/dismiss-notice'.$suffix.'.js',
                 array( 'jquery', 'common' ),
                 false,
                 true
             );
 
             wp_localize_script(
-                'courtyard-dismissible-notices',
+                'envy-blog-dismissible-notices',
                 'dismissible_notice',
                 array(
                     'nonce' => wp_create_nonce( 'dismissible-notice' ),

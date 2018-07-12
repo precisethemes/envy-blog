@@ -22,7 +22,7 @@ get_header();
 
                     if ( $author_avatar ) { ?>
                         <figure class="author-avatar">
-                            <?php echo $author_avatar; ?>
+                            <?php echo wp_kses_post( $author_avatar ); ?>
                         </figure><!-- .author-avatar -->
                     <?php } ?>
 
