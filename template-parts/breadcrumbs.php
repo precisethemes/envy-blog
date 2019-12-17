@@ -24,7 +24,7 @@ if ( ! function_exists( 'breadcrumb_trail' ) ) {
 		'container'   => 'div',
 		'show_browse' => false,
 	);
-	breadcrumb_trail( $breadcrumb_args );
+    envy_blog_breadcrumb( $breadcrumb_args );
 	?>
 	
 </div><!-- #breadcrumb -->

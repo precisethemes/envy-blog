@@ -9,7 +9,6 @@ $cart_activate   = get_theme_mod( 'envy-blog_header_wc_cart_icon_activate', true
 ?>
 
 <div class="site-branding">
-
     <?php if ( is_front_page() ) : ?>
         <h1 class="site-title">
             <?php the_custom_logo(); ?>
@@ -37,18 +36,14 @@ $cart_activate   = get_theme_mod( 'envy-blog_header_wc_cart_icon_activate', true
         $description = get_bloginfo( 'description', 'display' );
         if ( $description || is_customize_preview() ) : ?>
             <p class="site-description"><?php echo esc_html($description); /* WPCS: xss ok. */ ?></p>
-            <?php
+        <?php
         endif;
     endif;
     ?>
 </div><!-- .site-branding -->
 
 <div id="site-navigation" class="main-navigation" role="navigation">
-    <div class="main-navigation-wrap d-none d-lg-block">
-        <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-    </div>
-
-    <div class="main-navigation-wrap main-navigation-sm d-lg-none">
+    <div class="main-navigation-wrap main-navigation-sm">
         <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
     </div>
 
@@ -90,10 +85,10 @@ $cart_activate   = get_theme_mod( 'envy-blog_header_wc_cart_icon_activate', true
         <div class="nav-bar-search-close"><i class="pt-icon-close transition-5"></i></div>
 
         <div class="nav-bar-search-holder">
-            <form role="search" method="get" action="<?php echo esc_url( home_url( '/'  ) ); ?>">
-                <input type="search" class="search-field" placeholder="<?php echo esc_attr_x( 'Start Typing Here&hellip;', 'placeholder', 'envy-blog' ); ?>" value="<?php echo get_search_query(); ?>" name="s" title="<?php echo esc_attr_x( 'Search for:', 'label', 'envy-blog' ); ?>" />
+            <form role="search" method="get" class="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+                <span class="screen-reader-text"><?php echo esc_html_x( 'Search for:', 'label', 'envy-blog' ); ?></span>
+                <input type="search" class="search-field" placeholder="<?php echo esc_attr_x( 'Start Typing Here&hellip;', 'placeholder', 'envy-blog' ); ?>" value="<?php echo esc_attr( get_search_query() ); ?>" name="s" />
                 <p><?php echo esc_html__( 'Press Enter/Return to start Search', 'envy-blog'); ?></p>
-                <input type="hidden" name="post_type" value="Search" />
             </form>
         </div><!-- .nav-bar-search-holder -->
     </div><!-- .nav-bar-search-wrap -->

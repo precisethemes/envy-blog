@@ -1,33 +1,17 @@
-=== Envy Blog ===
+﻿=== Envy Blog ===
 
 Contributors: Precise Themes
-Version: 1.3.5
+Tags: grid-layout, one-column, two-columns, left-sidebar, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu, custom-logo, featured-images, footer-widgets, full-width-template, theme-options, threaded-comments, translation-ready, blog, e-commerce
 Requires at least: 4.8
+Tested up to: 4.8
+Stable tag: 1.4.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: grid-layout, one-column, two-columns, left-sidebar, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu, custom-logo, featured-images, footer-widgets, full-width-template, theme-options, threaded-comments, translation-ready, blog, e-commerce
-
-
-== Copyright ==
-
-Envy Blog, Copyright 2017 Precise Themes
-Envy Blog is distributed under the terms of the GNU GPL
-
 
 == Description ==
-
-Description: Envy Blog is clean, modern & minimal WordPress theme with responsive design and beautifully designed theme perfectly for blogger. Suitable for Personal Blog, Travel Blog, Niche Blog, Corporate Blog, Marketing Blog, Fashion Blog, Organic Blog, Foods Blog, Magazine and/or any kind of blog. DEMO: https://precisethemes.com/demo/envy-blog/
-
-
-== Installation ==
-
-1. In your admin panel, go to Appearance > Themes and click the Add New button.
-2. Click Upload and Choose File, then select the theme's .zip file. Click Install Now.
-3. Click Activate to use your new theme right away.
-
+Description: Envy Blog is clean, modern & minimal WordPress theme with responsive design and beautifully designed theme perfectly for blogger. Suitable for Personal Blog, Travel Blog, Niche Blog, Corporate Blog, Marketing Blog, Fashion Blog, Organic Blog, Foods Blog, Magazine and/or any kind of blog. View Demo at: https://precisethemes.com/go/envy-blog-demo/
 
 == Frequently Asked Questions ==
-
 = Ho to setup homepage as in demo? =
     a. You need to create a page with suitable name("Home" may be good one) and select Page Temple "Front Page" and save it. can create page for hero image slider, rooms, services, holiday package and select respective page templated.
     b. Go to Setting -> Reading -> and setup "Front page displays" with active radio option of "A static page (select below)" and choose recently created page("Home") and save changes.
@@ -35,25 +19,18 @@ Description: Envy Blog is clean, modern & minimal WordPress theme with responsiv
     d. Drag required widgets(PT: Hero Image Slider, PT: Rooms ans so on) to "Front Page - Home" widgets position. and you are done.
 
 = Where can I add widgets? =
-
-    envy-blog includes widgets areas, located underneath the main content and sidebar. Configure these areas by going to Customizer > Widgets in your Dashboard.
+    Envy Blog includes widgets areas, located underneath the main content and sidebar. Configure these areas by going to Customizer > Widgets in your Dashboard.
 
 = How to add a menu? =
+    Envy Blog comes with one Custom Menu in the header, which can be configured via Customizer at Menus. This menu is hidden by default, and will not be displayed unless a Custom Menu is assigned.
 
-    envy-blog comes with one Custom Menu in the header, which can be configured via Customizer at Menus. This menu is hidden by default, and will not be displayed unless a Custom Menu is assigned.
+= Does Envy Blog use featured images? =
+    Envy Blog makes us of Featured Images, which helps to visually tell your story. Featured Images are displayed below the title on the blog posts and archive pages. A smaller version of the image is used on the blog index page. For the optimal result, provide an image at least 1200px wide.
 
-= Does envy-blog use featured images? =
-
-    envy-blog makes us of Featured Images, which helps to visually tell your story. Featured Images are displayed below the title on the blog posts and archive pages. A smaller version of the image is used on the blog index page. For the optimal result, provide an image at least 1200px wide.
-
-
-=== Credits ===
-
+== Resources  ==
 * Based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 
-
-=== CSS ===
-
+== CSS ==
 1. Font-Awesome.css - http://fontawesome.io/
    Licensed under the MIT license - http://opensource.org/licenses/MIT
    Font Awesome by Dave Gandy - http://fontawesome.io
@@ -66,9 +43,7 @@ Description: Envy Blog is clean, modern & minimal WordPress theme with responsiv
      License: MIT License
      URL: http://opensource.org/licenses/mit-license.html
 
-
-=== Fonts ===
-
+== Fonts ==
 1. Font Awesome: - http://fontawesome.io/
    Licensed under the MIT license - http://opensource.org/licenses/MIT
    Font Awesome by Dave Gandy - http://fontawesome.io
@@ -76,19 +51,40 @@ Description: Envy Blog is clean, modern & minimal WordPress theme with responsiv
 2. Google Fonts - http://google.com/fonts
    IL Open Font License, v1.1, Apache 2 license, Ubuntu Font License v1.0.
 
-=== Images ===
-
-Licensed under CC0 Public Domain (http://creativecommons.org/publicdomain/zero/1.0/deed.en)
-
-1. https://stocksnap.io/photo/N7FUTW0RY5
-2. https://stocksnap.io/photo/UB2UXMASSW
-3. https://www.pexels.com/photo/silver-imac-on-white-surface-near-apple-keyboard-and-magic-mouse-held-by-human-hand-597330/
-4. https://altphotos.com/photo/room-interior-with-lamp-chair-and-table-on-white-wall-background-586/
-5. https://www.pexels.com/photo/beige-wooden-nightstand-with-white-desk-lamp-brown-wooden-bed-with-grey-comforter-set-707581/
-6. https://stocksnap.io/photo/STPKOSPYIO
+== Images ==
+   1. https://stocksnap.io/photo/N7FUTW0RY5 © Bench Accounting, CC0
+   2. https://stocksnap.io/photo/UB2UXMASSW © Sarah Dorweiler, CC0
+   3. https://stocksnap.io/photo/LKH86X25NR © Rawpixel.com, CC0
+   4. https://altphotos.com/photo/room-interior-with-lamp-chair-and-table-on-white-wall-background-586/ © Breather, CC0
+   5. https://stocksnap.io/photo/TMWN577QQF © Sylwia Pietruszka, CC0
+   6. https://stocksnap.io/photo/STPKOSPYIO © Rawpixel.com, CC0
 
 
-=== Changelog ===
+== Plugins ==
+1. TGM-Plugin-Activation: - https://github.com/TGMPA/TGM-Plugin-Activation
+    Licensed under the GNU General Public License 2.6.1
+
+2. Kirki: - http://aristath.github.io/kirki/
+   Licensed under the MIT license - http://opensource.org/licenses/MIT
+
+
+== Changelog ==
+Version 1.4.0 - 2019-12-17
+* Fixed google search console breadcrumb issue.
+
+Version 1.3.9 - 2019-04-18
+* Fixed theme switcher option on customizer
+* Fixed polylang issue for PHP version 7.3
+
+Version 1.3.8 - 2019-01-01
+* Fixed sidebar design issue for safari browser.
+* Enhancement search input field.
+
+Version 1.3.7 - 2018-12-10
+* Fixed masonry thumbnail issue for archive page.
+
+Version 1.3.6
+* Fixed menu issue for Header Layout 2
 
 Version 1.3.5
 * Added Back compatible functionality for PHP version.
@@ -114,7 +110,7 @@ Version 1.3
 * Fixed window resize header height
 
 Version 1.2
-* Fixed Word brealk issue.
+* Fixed Word break issue.
 
 Version 1.1
 * Added Getting Started Page.
@@ -129,4 +125,4 @@ Version 1.0.1
 * Fixed Some Issues
 
 Version 1.0.0
-* Initial release - Dec 05, 2017
+* Initial release - 2017-12-05   

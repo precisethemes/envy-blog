@@ -154,6 +154,7 @@ module.exports = function (grunt) {
                      */
                     '!Gruntfile.js',
                     '!package.json',
+                    '!package-lock.json',
                     '!assets/sass/**',
                 ],
                 dest: 'envy-blog/'

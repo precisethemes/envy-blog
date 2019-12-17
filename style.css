@@ -1,6 +1,6 @@
 /*
 Theme Name: Envy Blog
-Version: 1.3.5
+Version: 1.4.0
 Author: Precise Themes
 Author URI: https://precisethemes.com/
 Theme URI: http://precisethemes.com/envy-blog/
@@ -503,6 +503,21 @@ a:focus {
 a:hover,
 a:active {
 	outline: 0;
+}
+
+.object-fit-cover {
+	-o-object-fit: cover;
+	object-fit: cover;
+	-o-object-position: center;
+	object-position: center;
+	width: 100%;
+	height: 100%;
+}
+
+.background-cover {
+	-webkit-background-size: cover !important;
+	background-size: cover !important;
+	background-position: center !important;
 }
 
 /*--------------------------------------------------------------
@@ -2005,8 +2020,8 @@ a.btn.square.light.transparent:hover {
 ----------------------------------*/
 .content-area.has-left-sidebar,
 .content-area.has-right-sidebar {
-	width: -webkit-calc(100% - 400px);
-	width: calc(100% - 400px);
+	width: -webkit-calc(100% - 402px);
+	width: calc(100% - 402px);
 	padding-left: 40px;
 }
 
@@ -2923,6 +2938,20 @@ object {
 	margin-right: -30px;
 	margin-left: -30px;
 }
+
+.blog-layout.masonry .featured-image {
+	height: 0;
+	background: #ccc;
+}
+
+.blog-layout.masonry .featured-image a.post-format {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
 
 /*
   Blog Layout Display - Flex

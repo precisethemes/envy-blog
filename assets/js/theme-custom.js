@@ -59,6 +59,10 @@ function hasScrolled() {
     $( '.nav-bar-search-icon' ).on( 'click', function() {
         $('body').on('wheel.modal mousewheel.modal', function () { return false; } );
         $( '.nav-bar-search-wrap' ).addClass( 'is-active' );
+
+        setTimeout(function(){
+            $('.nav-bar-search-wrap').find('.search-field').focus();
+        }, 50);
     });
 
     $( '.nav-bar-search-close' ).on( 'click', function() {

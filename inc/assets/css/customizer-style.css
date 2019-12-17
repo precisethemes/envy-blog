@@ -75,10 +75,6 @@
     border-bottom: 0 !important;
 }
 
-#accordion-section-themes {
-    display: none !important;
-}
-
 #customize-controls #customize-theme-controls .accordion-section > .accordion-section-title {
     border: 0 !important;
 }
@@ -101,6 +97,10 @@
 .customize-control-checkbox input,
 .customize-control-radio input {
     margin-left: 0 !important;
+}
+
+#accordion-section-custom_theme_upsell {
+    display: block !important;
 }
 
 /*
