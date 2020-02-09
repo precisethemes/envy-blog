@@ -868,7 +868,9 @@ p.site-description {
 }
 
 .main-navigation li:hover > ul,
-.secondary-navigation li:hover > ul {
+.secondary-navigation li:hover > ul,
+.main-navigation li:focus-within > ul,
+.secondary-navigation li:focus-within > ul{
 	top: 100%;
 	visibility: visible;
 	opacity: 1;
@@ -903,7 +905,9 @@ p.site-description {
 }
 
 .main-navigation li li:hover > ul,
-.secondary-navigation li li:hover > ul {
+.secondary-navigation li li:hover > ul,
+.main-navigation li li:focus-within > ul,
+.secondary-navigation li li:focus-within > ul {
 	top: -1px;
 }
 
