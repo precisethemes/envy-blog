@@ -22,6 +22,8 @@
 
 <body <?php body_class(); ?>>
 
+<?php wp_body_open(); ?>
+
 <div class="container">
     <div class="row">
 
@@ -34,6 +36,8 @@
             $header_class[] = 'is-sticky';
         }
         ?>
+
+        <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'envy-blog' ); ?></a>
 
         <header class="<?php echo esc_attr( implode( ' ', $header_class ) ); ?>">
 
@@ -78,4 +82,6 @@
 if ( get_theme_mod( 'envy-blog_general_breadcrumbs_activate', 1 ) == true ) {
     get_template_part( 'template-parts/breadcrumbs' );
 }
+?>
+<div id="content" class="site-content">
 

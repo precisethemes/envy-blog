@@ -4,7 +4,7 @@ Contributors: Precise Themes
 Tags: grid-layout, one-column, two-columns, left-sidebar, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu, custom-logo, featured-images, footer-widgets, full-width-template, theme-options, threaded-comments, translation-ready, blog, e-commerce
 Requires at least: 4.8
 Tested up to: 4.8
-Stable tag: 1.4.0
+Stable tag: 1.4.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -69,6 +69,12 @@ Description: Envy Blog is clean, modern & minimal WordPress theme with responsiv
 
 
 == Changelog ==
+Version 1.4.1 - 2020-02-09
+* Added `wp_body_open` function to support WordPress 5.2 `wp_body_open` hook.
+* Fixed `skip-link` to content area.
+* Fixed keyboard accessibility.
+* Tweak deprecate demo importer files through theme.
+
 Version 1.4.0 - 2019-12-17
 * Fixed google search console breadcrumb issue.
 

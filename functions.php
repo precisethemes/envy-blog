@@ -191,11 +191,6 @@ require ENVY_BLOG_THEME_DIR . '/inc/functions.php';
 require ENVY_BLOG_THEME_DIR . '/inc/compatibility/woocommerce/woocommerce.php';
 
 /**
- * Demo Importer
- */
-require ENVY_BLOG_THEME_DIR . '/inc/demo-importer/demo-importer.php';
-
-/**
  * Admin notice
  */
 require ENVY_BLOG_THEME_DIR . '/inc/notices/persist-admin-notices-dismissal.php';
@@ -210,7 +205,6 @@ require ENVY_BLOG_THEME_DIR . '/inc/welcome-screen/class-welcome-screen.php';
  */
 
 require ENVY_BLOG_THEME_DIR . '/inc/compatibility/polylang/customizer-polylang.php';
-
 
 /**
  * Load TGM Activation file.
@@ -230,12 +224,7 @@ if ( ! function_exists( 'envy_blog_register_recommended_plugins' ) ) :
                 'name'     => esc_html__( 'Contact Form 7', 'envy-blog' ),
                 'slug'     => 'contact-form-7',
                 'required' => false,
-            ),
-            array(
-                'name'     => esc_html__( 'One Click Demo Import', 'envy-blog' ),
-                'slug'     => 'one-click-demo-import',
-                'required' => false,
-            ),
+            )
         );
 
         $config = array();
