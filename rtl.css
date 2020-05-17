@@ -1,0 +1,143 @@
+/* 
+Theme Name: Envy Blog
+Adding support for languages written in a Right To Left (RTL).
+*/
+
+/* Reset */
+
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+/*
+  Button
+----------------------------------*/
+a.btn.arrow {
+    padding-right: 0;
+    padding-left: 32px;
+}
+
+a.btn.arrow::after {
+    content: '\e007';
+    right: auto;
+    padding-right: 10px;
+}
+
+a.btn.arrow:hover::after {
+    left: -12px;
+    right: auto;
+}
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+/*
+# Content with sidebars
+----------------------------------*/
+.content-area.has-right-sidebar {
+    padding-right: 0;
+    padding-left: 40px;
+}
+
+/*--------------------------------------------------------------
+# Sidebar
+--------------------------------------------------------------*/
+.right-sidebar {
+    margin-left: 0;
+    margin-right: 40px;
+}
+
+.left-sidebar {
+    margin-right: 0;
+    margin-left: 40px;
+}
+
+#secondary ul li::before {
+    right: -14px;
+}
+
+/*--------------------------------------------------------------
+# Single Post
+--------------------------------------------------------------*/
+/*
+  Post Meta
+----------------------------------*/
+.post-layout .post-content .entry-meta > span {
+	margin-right: 0;
+	margin-left: 25px;
+}
+
+/*
+  Author Box
+----------------------------------*/
+.author-box {
+    text-align: right;
+}
+
+/*
+  Post Navigation
+----------------------------------*/
+.post-navigation .nav-previous {
+    text-align: right;
+}
+
+.post-navigation .nav-next {
+text-align: left;
+}
+
+.post-navigation .nav-previous a::before {
+    content: '\e005';
+    right: 0;
+}
+
+.post-navigation .nav-next a::after  {
+    content: '\e007';
+    right: auto;
+    left: 0;
+}
+
+.post-navigation .nav-previous a:hover::before {
+	right: -10px;
+}
+
+.post-navigation .nav-next a:hover::after {
+	left: -10px;
+	right: auto;
+}
+
+/*--------------------------------------------------------------
+# Archive/Blog Layout
+--------------------------------------------------------------*/
+/*
+  Entry Meta
+----------------------------------*/
+.blog-layout .entry-meta > span {
+    margin-right: 0;
+    margin-left: 25px;
+}
+
+/*--------------------------------------------------------------
+# breadcrumbs
+--------------------------------------------------------------*/
+.breadcrumbs {
+    text-align: right;
+}
+
+.breadcrumbs ul li a::after {
+    float: left;
+}
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+/*
+# Widget: Custom Recent Posts
+----------------------------------*/
+.recent-post-flex figure {
+    margin-right: 0;
+    margin-left: 14px;
+}
